@@ -7,7 +7,7 @@
 <meta name="color-scheme" content="light only">
 <title>VERITAS, News</title>
 <link rel="icon" href="img/favicon.svg">
-<link rel="stylesheet" href="veritas.css?v=117">
+<link rel="stylesheet" href="veritas.css?v=118">
 <script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
 </head>
 <body class="v" data-hue="red">
@@ -182,6 +182,13 @@
     <label><input type="email" name="E-Mail" required autocomplete="email" placeholder=" " aria-label="E-Mail"><span aria-hidden="true">E-Mail</span></label>
     <button class="sbtn" type="submit"><span>Sign up</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></button>
     <p class="nlv-s">You can withdraw your consent at any time with the unsubscribe link in each newsletter <a href="privacy.html">Privacy Policy</a></p>
+    <!-- what one sees after signing up: the symbol of the brand draws its twelve ticks one after the other, then the words come (veritas.js).
+         TO WIRE: on this test site the address is NOT sent or kept anywhere yet; connect the client's newsletter service before the site goes live. -->
+    <div class="nlv-ok" role="status" aria-live="polite" hidden>
+      <svg viewBox="-50 -50 100 100" aria-hidden="true"><line style="--k:0" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(0)"/><line style="--k:1" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(30)"/><line style="--k:2" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(60)"/><line style="--k:3" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(90)"/><line style="--k:4" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(120)"/><line style="--k:5" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(150)"/><line style="--k:6" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(180)"/><line style="--k:7" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(210)"/><line style="--k:8" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(240)"/><line style="--k:9" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(270)"/><line style="--k:10" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(300)"/><line style="--k:11" x1="0" y1="-46" x2="0" y2="-30" pathLength="1" transform="rotate(330)"/></svg>
+      <p class="nlv-ok-h">Thank you.</p>
+      <p class="t-body"><span>You are on the list. The next newsletter goes to</span> <b></b></p>
+    </div>
   </form>
 </section>
 
@@ -196,9 +203,9 @@
   </div>
 </footer>
 
-<script src="veritas.js?v=73"></script>
+<script src="veritas.js?v=74"></script>
 <script src="symbol.js?v=43"></script>
 <script src="de.js?v=31"></script>
-<script src="i18n.js?v=56" defer></script>
+<script src="i18n.js?v=57" defer></script>
 </body>
 </html>

@@ -1303,3 +1303,21 @@ fieldset.q>legend{float:left;width:100%}fieldset.q>legend+*{clear:both}
    tallest screen (browser bars folded away) and keeps room under its last line, so one can scroll past the end and see all of it above the browser's bar. */
 .footer{min-height:100vh;min-height:100svh}
 @media(max-width:820px){.footer{min-height:100vh;min-height:100lvh;justify-content:flex-end;padding-bottom:calc(var(--row)*.4 + env(safe-area-inset-bottom) + 96px)}}
+
+/* the newsletter, after signing up: the fields step back, the symbol draws its twelve ticks clockwise, the words rise */
+.nlv form{position:relative}
+.nlv form>*:not(.nlv-ok){transition:opacity .45s var(--ease),transform .6s var(--ease)}
+.nlv form.done>*:not(.nlv-ok){opacity:0;transform:translateY(-10px);pointer-events:none}
+.nlv-ok{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
+.nlv-ok[hidden]{display:none}
+.nlv-ok svg{width:clamp(84px,7.4vw,128px);overflow:visible;color:var(--h-dark)}
+.nlv-ok line{stroke:currentColor;stroke-width:4.6;stroke-dasharray:1;stroke-dashoffset:1}
+.nlv-ok.go line{stroke-dashoffset:0;transition:stroke-dashoffset .5s cubic-bezier(.3,.7,.2,1) calc(.35s + var(--k)*70ms)}
+.nlv-ok.go svg{animation:nlturn 1.6s var(--ease) 1.25s both}
+@keyframes nlturn{from{rotate:0deg}to{rotate:30deg}}
+.nlv-ok-h{margin-top:calc(var(--row)*.26);font:400 clamp(26px,3vw,54px)/1.1 var(--head);-webkit-text-stroke:.012em currentColor}
+.nlv-ok-h,.nlv-ok .t-body{opacity:0;transform:translateY(14px)}
+.nlv-ok.go .nlv-ok-h{opacity:1;transform:none;transition:opacity .8s var(--ease) 1.25s,transform .9s var(--ease) 1.25s}
+.nlv-ok.go .t-body{opacity:1;transform:none;margin-top:.7em;transition:opacity .8s var(--ease) 1.45s,transform .9s var(--ease) 1.45s}
+.nlv-ok b{font-weight:600;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:reduce){.nlv-ok line{stroke-dashoffset:0;transition:none!important}.nlv-ok.go svg{animation:none}.nlv-ok-h,.nlv-ok .t-body{opacity:1;transform:none;transition:none!important}}

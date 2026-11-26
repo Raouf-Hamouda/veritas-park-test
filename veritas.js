@@ -183,3 +183,11 @@
   new IntersectionObserver((es, io) => es.forEach(e => { if (e.isIntersecting) { dial.classList.add('in'); io.disconnect() } }), { threshold: .3 }).observe(dial);
   const read = () => { const n = Math.min(12, mail.value.length), ok = /^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(mail.value.trim()); ticks.forEach((t, k) => t.classList.toggle('on', ok || k < n)); dial.classList.toggle('ok', ok); dial.classList.remove('sent') };
   mail.addEventListener('input', read); form.addEventListener('submit', () => dial.classList.add('sent')); })();
+
+/* the newsletter of a page (.nlv): after signing up the fields step back and the thanks come with the symbol drawing itself.
+   The address is not sent anywhere yet on this test site: the client's newsletter service is to be connected here. */
+(() => { const form = document.querySelector('.nlv form'); if (!form) return; const ok = form.querySelector('.nlv-ok'), mail = form.querySelector('input[type=email]');
+  form.addEventListener('submit', e => { e.preventDefault(); if (!mail.checkValidity() || form.classList.contains('done')) return;
+    ok.querySelector('b').textContent = mail.value.trim(); form.style.minHeight = Math.max(form.offsetHeight, 300) + 'px'; form.classList.add('done'); mail.blur();
+    setTimeout(() => { ok.hidden = false; requestAnimationFrame(() => requestAnimationFrame(() => ok.classList.add('go'))) }, 380) }); })();
+
