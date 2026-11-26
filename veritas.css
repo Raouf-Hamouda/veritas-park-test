@@ -1094,42 +1094,50 @@ html[lang=de] .lang-tick i{transform:rotate(24deg)}.lang-tick:hover i{opacity:1}
 html{background:#1a0c0c}
 
 /* ============ NEWS (26 Nov 2026): the News page and the way to it from the home page ============
-   The reader: the section is as tall as its thirteen news, its screen holds still (sticky) and news.js shows the news the scroll has reached.
-   One news = a page of the book: the picture standing on the foot line, the title in Ulrich small letters at the foot, a narrow text, the sign.
-   The pictures of the live site are small (768 px at most): the page shows enlarged copies (img/news_big, made with Real-ESRGAN, originals kept in img/).
-   A picture is never cut: it keeps its own shape and stands bottom left in its six columns. */
+   The pictures of the live site are small (768 px at most): the page shows enlarged copies (img/news_big, made with Real-ESRGAN, originals kept in img/). */
 .top2 h1.t-caps{max-width:none}
 .strip-ctl .all{align-self:center;margin-right:calc(var(--g)*1.6);color:#000}
-.nr{height:calc(100svh + var(--n)*36svh);border-top:0}
-.nr-in{position:sticky;top:0;height:100svh;min-height:520px;display:grid;grid-template-rows:auto auto minmax(0,1fr);padding:clamp(84px,7vw,128px) var(--m) calc(var(--row)*.5)}
-.nr-top{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:calc(var(--row)*.14)}
-.nr-top .t-label{font:400 clamp(21px,2vw,34px)/1.1 var(--head);text-transform:uppercase;letter-spacing:.06em}
-.nr-top .strip-ctl{padding:0}
-.nr-rule{display:flex;border-top:1px solid #000;position:relative}
-.nr-rule::before{content:"";position:absolute;left:0;top:-2px;height:3px;width:calc((var(--i,0) + 1)/var(--n)*100%);background:var(--h-dark);transition:width .6s var(--ease)}
-.nr-rule button{all:unset;box-sizing:border-box;flex:1;height:34px;position:relative;cursor:pointer}
-.nr-rule button::before{content:"";position:absolute;left:0;top:0;width:1px;height:12px;background:#000;transition:height .5s var(--ease),width .3s,background .3s}
-.nr-rule button:hover::before,.nr-rule button:focus-visible::before{height:22px}
-.nr-rule button.on::before{height:30px;width:3px;background:var(--h-dark)}
-.nr-rule button:focus-visible{outline:2px solid var(--h-dark);outline-offset:2px}
-.nr-list{position:relative;min-height:0}
-.nr-list article{position:absolute;inset:0;display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));column-gap:var(--g);align-items:end;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility 0s .45s}
-.nr-list article.on{opacity:1;visibility:visible;transition:opacity .7s var(--ease) .12s,visibility 0s}
-.nr-list figure{grid-column:1/7;align-self:stretch;position:relative;min-height:0;margin:0}
-.nr-list img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:0 100%;display:block;transform:translateY(18px);transition:transform 1.1s var(--ease)}
-.nr-list article.on img{transform:none}
-.nr-txt{grid-column:8/13;min-width:0}
-.nr-txt h2{font:400 clamp(24px,2.35vw,42px)/1.16 var(--head);word-spacing:.05em;text-wrap:balance;-webkit-text-stroke:.012em currentColor;max-width:19em}
-.nr-txt .t-body{margin-top:calc(var(--row)*.22);max-width:32em}
-.nr-txt .sbtn{margin-top:calc(var(--row)*.3)}
-@media(max-height:700px) and (min-width:821px){.nr-txt h2{font-size:clamp(22px,2vw,34px)}}
+/* the wall of news (second version of the page; the first, a reader held still by the scroll, was refused) */
+.nw-sec{padding:calc(var(--row)*.2) 0 calc(var(--row)*1.1)}
+.nw-row{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));grid-template-rows:auto auto;column-gap:var(--g);padding:0 var(--m);margin-top:calc(var(--row)*.95)}
+.nw{grid-column:var(--at)/span var(--s);grid-row:1/3;display:grid;grid-template-rows:subgrid;min-width:0}
+.nw.reveal{opacity:1;transform:none}
+.nw-pic{align-self:end;display:block;position:relative;overflow:hidden;width:100%;max-height:50svh;background:var(--h-pastel);clip-path:inset(100% 0 0 0)}
+.nw-pic img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.16);transition:transform 1.2s var(--ease)}
+.nw.in .nw-pic{clip-path:inset(0);transition:clip-path 1.25s cubic-bezier(.6,0,.15,1) var(--d,0ms)}
+.nw.in .nw-pic img{transform:none;transition:transform 1.9s var(--ease) var(--d,0ms)}
+.nw-pic::after{content:"";position:absolute;right:0;bottom:0;width:52px;height:52px;background:var(--h-dark);translate:0 101%;transition:translate .5s var(--ease)}
+.nw-pic::before{content:"";position:absolute;right:16px;bottom:16px;z-index:1;width:20px;height:20px;background:var(--h-pastel);-webkit-mask:url(img/icons/outside_link.svg) 50%/contain no-repeat;mask:url(img/icons/outside_link.svg) 50%/contain no-repeat;opacity:0;transition:opacity .3s}
+.nw-txt{position:relative;margin-top:calc(var(--row)*.18);padding-top:calc(var(--row)*.16);border-top:1px solid #000;display:flex;flex-direction:column;align-items:flex-start;opacity:0;transform:translateY(14px)}
+.nw-txt::before{content:"";position:absolute;left:0;top:-1px;width:1px;height:14px;background:#000}
+.nw.in .nw-txt{opacity:1;transform:none;transition:opacity .9s var(--ease) calc(var(--d,0ms) + .35s),transform .9s var(--ease) calc(var(--d,0ms) + .35s)}
+.nw-src{font:600 13.5px/1.3 var(--text);color:var(--soft);margin:0 0 .9em}
+.nw-txt h2{font:400 clamp(19px,1.5vw,26px)/1.22 var(--head);text-wrap:balance;word-spacing:.04em}
+.nw.big .nw-txt h2{font-size:clamp(24px,2.25vw,40px);line-height:1.14;-webkit-text-stroke:.012em currentColor;max-width:17em}
+.nw-txt .body{font-size:15px;line-height:1.4;color:var(--soft);margin-top:.8em;max-width:34em}
+.nw-txt .sbtn{margin-top:1.6em}
+@media(hover:hover){
+  .nw:hover .nw-pic img{transform:scale(1.045);transition:transform 1.4s var(--ease)}
+  .nw:hover .nw-pic::after{translate:0 0}.nw:hover .nw-pic::before{opacity:1;transition:opacity .4s .2s}
+  .nw:hover .sbtn span{translate:.35em 0}.nw:hover .sbtn::after{animation:sline .7s cubic-bezier(.45,0,.85,.55) both}.nw:hover .sbtn .curve path{stroke-dasharray:1;animation:scurve .45s cubic-bezier(.2,.6,.3,1) .66s both}
+}
 @media(max-width:820px){
   .strip-ctl .all{margin-right:14px}
-  .nr{height:auto}.nr-in{position:static;height:auto;min-height:0;display:block;padding:calc(var(--row)*.75) var(--m) calc(var(--row)*.4)}
-  .nr-top .strip-ctl,.nr-rule{display:none}.nr-top{border-bottom:1px solid #000;padding-bottom:calc(var(--row)*.2)}
-  .nr-list article{position:static;display:block;opacity:1;visibility:visible;padding:calc(var(--row)*.5) 0 calc(var(--row)*.7);border-top:1px solid var(--line)}
-  .nr-list article:first-child{border-top:0}
-  .nr-list img{position:static;width:100%;height:auto;transform:none}.nr-list figure{margin-bottom:calc(var(--row)*.36)}
-  .nr-txt h2{font-size:clamp(22px,6vw,28px);line-height:1.2}
+  .nw-sec{padding-bottom:calc(var(--row)*.8)}
+  .nw-row{display:block;margin-top:0}.nw{display:block;margin-top:calc(var(--row)*1)}
+  .nw-pic{max-height:none}.nw-txt h2,.nw.big .nw-txt h2{font-size:clamp(21px,5.8vw,27px);line-height:1.2;max-width:none}
 }
-@media(prefers-reduced-motion:reduce){.nr-list img{transform:none;transition:none}.nr-rule::before{transition:none}}
+@media(prefers-reduced-motion:reduce){.nw-pic{clip-path:none}.nw-pic img{transform:none}.nw-txt{opacity:1;transform:none}}
+
+/* the EN / DE switch stands in the foot of every page (26 Nov 2026); the top bar no longer carries it, nor Home (the logo goes home) */
+.footer .lang{margin:1.3em 0 0 -.8em;font-size:14px;color:var(--on-dark-2)}
+.footer .lang button{display:inline-block}
+
+/* Fields of Innovation (26 Nov 2026, his word: "this black thing that appears, I hate it"): a square never turns black any more.
+   Only its colour column answers: it grows a little and its colours glide slowly along it. */
+.fld .lit{display:none}
+.fld:hover,.fld:focus-visible,.fld.lit-on{color:inherit}
+.fld .col{background-size:100% 220%;background-position:50% 0;transition:width .6s var(--ease),background-position 1.6s var(--ease)}
+.fld:hover .col,.fld:focus-visible .col,.fld.lit-on .col{width:11px;background-position:50% 100%}
+@media(hover:none){.fld:hover:not(.lit-on) .col{background-position:50% 0}}
+@media(prefers-reduced-motion:reduce){.fld .col{transition:none}}

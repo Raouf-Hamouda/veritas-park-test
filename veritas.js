@@ -154,6 +154,9 @@
   el.querySelector('.nl-x').addEventListener('click', close); el.addEventListener('click', e => { if (e.target === el) close() });
   el.querySelector('form').addEventListener('submit', () => { done(); setTimeout(close, 300) });
   const ask = /[?&]newsletter\b/.test(location.search);   // ?newsletter shows the card at once (to look at it)
+  // a sign of a page can open the card too (data-newsletter)
+  const open = () => { el.hidden = false; requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('on'))); D.addEventListener('keydown', key) };
+  D.querySelectorAll('[data-newsletter]').forEach(b => b.addEventListener('click', e => { e.preventDefault(); open() }));
   if (seen && !ask) return;
   let shown = false; const show = () => { if (shown) return; const b = D.body; if (b.classList.contains('lb-open') || D.documentElement.classList.contains('nav-open') || D.querySelector('.lb')) { setTimeout(show, 4000); return }
     shown = true; removeEventListener('scroll', half); el.hidden = false; requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('on'))); D.addEventListener('keydown', key) };

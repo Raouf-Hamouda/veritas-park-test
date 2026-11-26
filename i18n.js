@@ -84,6 +84,8 @@
       root.classList.remove('lang-swap'); root.classList.add('lang-in'); setTimeout(() => root.classList.remove('lang-in'), 700) }) }, 250) };
   document.addEventListener('click', e => { const b = e.target.closest('[data-lang]'); if (b) { e.preventDefault(); swap(b.dataset.lang) } });
   // the first visit opens in the language of the visitor's browser (German for a browser set to German); after that, the choice made with the switch is kept
-  let saved = null; try { saved = localStorage.getItem('v-lang') } catch (e) {} if (!saved) saved = /^de\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || '') ? 'de' : 'en'; if (saved === 'de') set('de');
+  let saved = null; try { saved = localStorage.getItem('v-lang') } catch (e) {} // first visit: German in Germany only, English everywhere else (his rule of 26 Nov 2026). The page has no server, so "in Germany" is read
+  // from the clock zone of the machine: Germany has its own (Europe/Berlin, and Europe/Busingen for one village). The choice made with the switch is kept after.
+  if (!saved) { let tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '' } catch (e) {} saved = /^Europe\/(Berlin|Busingen)$/.test(tz) ? 'de' : 'en' } if (saved === 'de') set('de');
   window.veritasLang = set;
 })();
