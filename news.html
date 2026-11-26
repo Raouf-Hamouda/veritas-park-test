@@ -7,7 +7,7 @@
 <meta name="color-scheme" content="light only">
 <title>VERITAS, News</title>
 <link rel="icon" href="img/favicon.svg">
-<link rel="stylesheet" href="veritas.css?v=115">
+<link rel="stylesheet" href="veritas.css?v=116">
 <script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
 </head>
 <body class="v" data-hue="red">
@@ -170,16 +170,18 @@
   </div>
 </section>
 
-<!-- the newsletter, written into the page. Third version, 26 Nov 2026, after his reference (a jeweller's newsletter block): white, quiet, centred:
-     the name, one line, the address to write, the sign. The dark block with the dial and the four interests was refused ("get it like something in white").
+<!-- the newsletter, written into the page. Fourth version, 26 Nov 2026: white and quiet, but in the page grammar of VERITAS (the same as Narrative, Vision, Mission):
+     the small name on its rule, the headline in capitals on the left, and in the narrow column on the right the line, the address to write, the wall sign.
+     Refused before it: a dark block with a dial, then a centred block copied from a jeweller's site ("I want it with the DA of Veritas, but that minimalistic").
      Words: those of the newsletter card of the site. The form leaves by e-mail, like the card. -->
-<section class="nlw white" data-ground="light">
-  <h2 class="reveal">Be the first to know</h2>
-  <p class="nlw-t reveal" style="--d:80ms">Subscribe to receive our newsletter on the place, its spaces, events and more</p>
-  <form class="reveal" style="--d:160ms" action="mailto:info@veritas-park.eu?subject=Newsletter" method="post" enctype="text/plain">
+<section class="pg white nlv" data-ground="light" style="--rows:5">
+  <p class="t-label">Newsletter</p>
+  <h2 class="t-caps m reveal" style="grid-column:1/8">Be the first to know</h2>
+  <form class="reveal" style="grid-column:8/13;--d:90ms" action="mailto:info@veritas-park.eu?subject=Newsletter" method="post" enctype="text/plain">
+    <p class="t-body">Subscribe to receive our newsletter on the place, its spaces, events and more</p>
     <label><input type="email" name="E-Mail" required autocomplete="email" placeholder=" " aria-label="E-Mail"><span aria-hidden="true">E-Mail</span></label>
     <button class="sbtn" type="submit"><span>Sign up</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></button>
-    <p class="nlw-s">You can withdraw your consent at any time with the unsubscribe link in each newsletter <a href="privacy.html">Privacy Policy</a></p>
+    <p class="nlv-s">You can withdraw your consent at any time with the unsubscribe link in each newsletter <a href="privacy.html">Privacy Policy</a></p>
   </form>
 </section>
 
@@ -197,6 +199,6 @@
 <script src="veritas.js?v=72"></script>
 <script src="symbol.js?v=43"></script>
 <script src="de.js?v=31"></script>
-<script src="i18n.js?v=55" defer></script>
+<script src="i18n.js?v=56" defer></script>
 </body>
 </html>

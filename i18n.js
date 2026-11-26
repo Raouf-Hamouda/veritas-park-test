@@ -5,7 +5,7 @@
 (() => {
   const DE = window.VERITAS_DE || {}, key = t => t.toLowerCase().replace(/[^a-z0-9äöüß]+/g, '');
   const MINE = {
-    'See the spaces': 'Räume ansehen', 'Contact us': 'Kontakt', 'Write to us': 'Schreiben Sie uns', 'is coming back!': 'kommt zurück!', 'From 2025 Veritas produces again: but this time, the future.': 'Ab 2025 produziert Veritas wieder: Aber diesmal die Zukunft.',
+    'See the spaces': 'Räume ansehen', 'Newsletter': 'Newsletter', 'Contact us': 'Kontakt', 'Write to us': 'Schreiben Sie uns', 'is coming back!': 'kommt zurück!', 'From 2025 Veritas produces again: but this time, the future.': 'Ab 2025 produziert Veritas wieder: Aber diesmal die Zukunft.',
     'Where work meets balance.': 'Wo Konzentration auf Entspannung trifft.', 'Where raw meets refined.': 'Wo Big City Life auf Kleinstadt-Idyll trifft.', 'Where artist meets inspiration.': 'Wo Entertainment auf produktiv sein trifft.', 'Where nature meets glam.': 'Wo das-Gras-fühlen auf den-Bass-spüren trifft.',
     'Science': 'Wissenschaft', 'Technology': 'Technologie', 'Implementation': 'Umsetzung', 'Economy': 'Wirtschaft', 'Art': 'Kunst', 'Team': 'Team', 'Chief architect': 'Chefarchitektin', 'Head of research': 'Leiterin Forschung', 'Spokesperson': 'Sprecher', 'Property management': 'Immobilienverwaltung',
     // the five texts rewritten on 26 Nov 2026 (client remarks 3, 6, 7, 19, 22): my German, to be read by the client
