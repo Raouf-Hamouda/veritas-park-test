@@ -175,3 +175,11 @@
 (() => { const f = document.querySelector('.footer'); if (!f) return; const h = getComputedStyle(f).getPropertyValue('--h-dark').trim() || '#421616';
   const hex = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(h), rgb = /(\d+)\D+(\d+)\D+(\d+)/.exec(h), c = hex ? hex.slice(1).map(x => parseInt(x, 16)) : rgb ? rgb.slice(1).map(Number) : null;
   if (c) document.documentElement.style.backgroundColor = `rgb(${c.map(v => Math.round(v * .62)).join(',')})` })();
+
+/* the newsletter written into a page (.nlb): the dial of twelve ticks. One tick lights for each letter typed; a complete address lights the twelve
+   and turns the dial one hour; sending turns it once round. */
+(() => { const sec = document.querySelector('.nlb'); if (!sec) return;
+  const dial = sec.querySelector('.dial'), ticks = [...dial.querySelectorAll('line')], mail = sec.querySelector('input[type=email]'), form = sec.querySelector('form');
+  new IntersectionObserver((es, io) => es.forEach(e => { if (e.isIntersecting) { dial.classList.add('in'); io.disconnect() } }), { threshold: .3 }).observe(dial);
+  const read = () => { const n = Math.min(12, mail.value.length), ok = /^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(mail.value.trim()); ticks.forEach((t, k) => t.classList.toggle('on', ok || k < n)); dial.classList.toggle('ok', ok); dial.classList.remove('sent') };
+  mail.addEventListener('input', read); form.addEventListener('submit', () => dial.classList.add('sent')); })();

@@ -7,7 +7,7 @@
 <meta name="color-scheme" content="light only">
 <title>VERITAS, News</title>
 <link rel="icon" href="img/favicon.svg">
-<link rel="stylesheet" href="veritas.css?v=99">
+<link rel="stylesheet" href="veritas.css?v=101">
 <script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
 </head>
 <body class="v" data-hue="red">
@@ -170,14 +170,21 @@
   </div>
 </section>
 
-<!-- the newsletter, as the card of the site says it; the sign opens that card -->
-<section class="call2" data-ground="dark">
-  <img src="img/place/epp_9121.jpg" srcset="img/place/m/epp_9121.jpg 1280w, img/place/epp_9121.jpg 2000w" alt="The factory" loading="lazy">
-  <div>
-    <h2 class="t-caps reveal">Be the first to know</h2>
-    <p class="t-body reveal" style="--d:90ms;margin-top:calc(var(--row)*.26);font-size:clamp(18px,1.5vw,24px);max-width:30em;color:var(--on-dark)">Subscribe to receive our newsletter on the place, its spaces, events and more</p>
-    <div class="sbtns reveal" style="--d:160ms"><a class="sbtn" href="?newsletter" data-newsletter><span>Sign up</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></div>
+<!-- the newsletter, written into the page (26 Nov 2026; the first ending, a photograph with a sign opening the card, was refused).
+     Words: those of the newsletter card of the site. The dial is the symbol of the brand, twelve ticks: one tick lights for each letter typed,
+     and the twelve are lit when the address is complete (veritas.js). The form leaves by e-mail, like the card. -->
+<section class="nlb dark end" data-ground="dark">
+  <svg class="dial" viewBox="-50 -50 100 100" aria-hidden="true"><line style="--k:0" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(0)"/><line style="--k:1" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(30)"/><line style="--k:2" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(60)"/><line style="--k:3" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(90)"/><line style="--k:4" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(120)"/><line style="--k:5" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(150)"/><line style="--k:6" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(180)"/><line style="--k:7" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(210)"/><line style="--k:8" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(240)"/><line style="--k:9" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(270)"/><line style="--k:10" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(300)"/><line style="--k:11" x1="0" y1="-47" x2="0" y2="-33" transform="rotate(330)"/></svg>
+  <div class="nlb-t">
+    <h2 class="t-caps m reveal">Be the first to know</h2>
+    <p class="t-body reveal" style="--d:90ms">Subscribe to receive our newsletter on the place, its spaces, events and more</p>
   </div>
+  <form class="reveal" style="--d:160ms" action="mailto:info@veritas-park.eu?subject=Newsletter" method="post" enctype="text/plain">
+    <label class="nl-mail"><span>E-Mail *</span><input type="email" name="E-Mail" required autocomplete="email"></label>
+    <fieldset class="nl-pick"><legend>I am interested in</legend><label class="nl-c"><input type="checkbox" name="Interests" value="News from VERITAS" checked><i aria-hidden="true"></i><span>News from VERITAS</span></label><label class="nl-c"><input type="checkbox" name="Interests" value="Events and Club" checked><i aria-hidden="true"></i><span>Events and Club</span></label><label class="nl-c"><input type="checkbox" name="Interests" value="Spaces to rent" checked><i aria-hidden="true"></i><span>Spaces to rent</span></label><label class="nl-c"><input type="checkbox" name="Interests" value="Invest" checked><i aria-hidden="true"></i><span>Invest</span></label></fieldset>
+    <button class="sbtn nl-go" type="submit"><span>Sign up</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></button>
+    <p class="nlb-s">You can withdraw your consent at any time with the unsubscribe link in each newsletter <a href="privacy.html">Privacy Policy</a></p>
+  </form>
 </section>
 
 </main>
@@ -191,7 +198,7 @@
   </div>
 </footer>
 
-<script src="veritas.js?v=68"></script>
+<script src="veritas.js?v=70"></script>
 <script src="symbol.js?v=43"></script>
 <script src="de.js?v=31"></script>
 <script src="i18n.js?v=53" defer></script>
