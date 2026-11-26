@@ -1263,3 +1263,6 @@ html:not(.scrolled) .bar{gap:calc(clamp(18px,2.6vw,44px) - 4px)}
 @media(hover:hover){.ring8:hover .turn8{animation-play-state:paused}.ring8 figure:hover{scale:1.08;z-index:2;box-shadow:0 14px 40px rgba(0,0,0,.22)}}
 @media(max-width:820px){.ring8{grid-column:1/-1!important;grid-row:auto!important;width:100%;margin-top:calc(var(--row)*.5)}}
 @media(prefers-reduced-motion:reduce){.turn8{animation:none}}
+
+/* forms: the line above a question runs the whole width. A question written as the legend of its group used to cut that line and leave a short stub at its right end. */
+fieldset.q>legend{float:left;width:100%}fieldset.q>legend+*{clear:both}
