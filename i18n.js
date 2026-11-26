@@ -5,7 +5,9 @@
 (() => {
   const DE = window.VERITAS_DE || {}, key = t => t.toLowerCase().replace(/[^a-z0-9äöüß]+/g, '');
   const MINE = {
-    'See the spaces': 'Räume ansehen',
+    'See the spaces': 'Räume ansehen', 'is coming back!': 'kommt zurück!', 'From 2025 Veritas produces again: but this time, the future.': 'Ab 2025 produziert Veritas wieder: Aber diesmal die Zukunft.',
+    'Where work meets balance.': 'Wo Konzentration auf Entspannung trifft.', 'Where raw meets refined.': 'Wo Big City Life auf Kleinstadt-Idyll trifft.', 'Where artist meets inspiration.': 'Wo Entertainment auf produktiv sein trifft.', 'Where nature meets glam.': 'Wo das-Gras-fühlen auf den-Bass-spüren trifft.',
+    'Science': 'Wissenschaft', 'Technology': 'Technologie', 'Implementation': 'Umsetzung', 'Economy': 'Wirtschaft', 'Art': 'Kunst', 'Team': 'Team', 'Chief architect': 'Chefarchitektin', 'Head of research': 'Leiterin Forschung', 'Spokesperson': 'Sprecher', 'Property management': 'Immobilienverwaltung',
     // the five texts rewritten on 26 Nov 2026 (client remarks 3, 6, 7, 19, 22): my German, to be read by the client
     'Let’s co-create a place that changes how we live and work, for the better.': 'Gestalten wir gemeinsam einen Ort, der unser Leben und Arbeiten zum Besseren verändert.',
     'At VERITAS we host artists, scientists, engineers and entrepreneurs in the former Singer sewing machine factory of Wittenberge. They work side by side here, and what they try out becomes part of the place.': 'Bei VERITAS empfangen wir Menschen aus Kunst, Wissenschaft, Technik und Wirtschaft im ehemaligen Singer-Nähmaschinenwerk in Wittenberge. Sie arbeiten hier Seite an Seite, und was sie ausprobieren, wird Teil des Ortes.',

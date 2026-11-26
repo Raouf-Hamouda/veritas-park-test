@@ -7,7 +7,7 @@
 <meta name="color-scheme" content="light only">
 <title>About, VERITAS</title>
 <link rel="icon" href="img/favicon.svg">
-<link rel="stylesheet" href="veritas.css?v=101">
+<link rel="stylesheet" href="veritas.css?v=102">
 <script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
 </head>
 <!-- VERITAS, the About page. Written by hand, 22 Nov 2026 (round 3). Words and pictures: veritas-park.eu/about. Look: the brand book. -->
@@ -35,9 +35,11 @@
 
 <main>
 
-<!-- the opening: the factory seen from the roof of building 4, and the first sentence of the live page -->
-<section class="top2" data-ground="dark">
-  <img src="img/place/b4roof_038.jpg" srcset="img/place/m/b4roof_038.jpg 1280w, img/place/b4roof_038.jpg 2000w" alt="The factory seen from the roof of building 4" fetchpriority="high">
+<!-- the opening (client remark 14): photographs of the place follow each other, slowly moving, and the round logo turns on them, as on the posters of the brand book.
+     The words are those of the live page. -->
+<section class="top2 turn" data-ground="dark">
+  <div class="pics"><img src="img/place/b4roof_038.jpg" srcset="img/place/m/b4roof_038.jpg 1280w, img/place/b4roof_038.jpg 2000w" alt="The factory seen from the roof of building 4" fetchpriority="high"><img src="img/place/epp_9195.jpg" srcset="img/place/m/epp_9195.jpg 1280w, img/place/epp_9195.jpg 2000w" alt="The letters VERITAS on the roof of the factory" loading="lazy"><img src="img/place/b13_031.jpg" srcset="img/place/m/b13_031.jpg 1280w, img/place/b13_031.jpg 2000w" alt="The clock tower" loading="lazy"><img src="img/place/around_081.jpg" srcset="img/place/m/around_081.jpg 1280w, img/place/around_081.jpg 2000w" alt="The river beside the factory" loading="lazy"></div>
+  <i class="mk spin" aria-hidden="true"></i>
   <div>
     <span class="t-brush reveal">About us</span>
     <h1 class="t-line reveal" style="--d:90ms">VERITAS is an <span class="pill">Urbanotop</span></h1>
@@ -45,17 +47,25 @@
   </div>
 </section>
 
-<!-- the quotation of the live page, beside the portrait the live page sets behind it. No word stands on the face. -->
-<section class="qsec dark" data-ground="dark">
-  <figure class="reveal"><img src="img/about_top.jpg" srcset="img/m/about_top.jpg 1280w, img/about_top.jpg 2200w" alt="Buckminster Fuller" loading="lazy" style="object-position:38% 25%"></figure>
-  <div><i class="mark"></i><blockquote class="quote reveal">“You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete.”</blockquote><span class="t-brush said reveal" style="--d:120ms">Buckminster Fuller</span></div>
+<!-- client remarks 15 and 16: the quotation of Buckminster Fuller stood here ("boring and oldschool"); in its place the poster of the brand book,
+     "Veritas kommt zurück!": the word, the clock tower in two orange fields, the small line between them. German = the words of the poster; the English is mine. -->
+<section class="kz white" data-ground="light">
+  <p class="kz-w reveal">Veritas</p>
+  <div class="kz-mid">
+    <i class="kz-t up reveal" style="--d:120ms"></i>
+    <p class="kz-s reveal" style="--d:260ms">From 2025 Veritas produces again: but this time, the future.</p>
+    <i class="kz-t dn reveal" style="--d:200ms"></i>
+  </div>
+  <p class="kz-w b reveal" style="--d:320ms">is coming back!</p>
 </section>
 
 <!-- Narrative: the page of the book (p6): FOREVER EVOLVING, and the text in a narrow column (the square between the two words was taken out on 23 Nov) -->
 <section class="pg white" data-ground="light" style="--rows:7">
   <p class="t-label">Narrative</p>
   <h2 class="t-caps reveal" style="grid-column:1/8;font-size:clamp(48px,8.4vw,150px)">Forever<br>evolving</h2>
-  <div class="t-body reveal" style="grid-column:8/12;--d:90ms">
+  <!-- client remark 18: the wall of clocks of the brand book (one clock per colour of the book, each at its own time, all running) -->
+  <div class="clocks reveal" style="--d:160ms" aria-hidden="true"><i class="ck" data-hue="brown" style="--sh:0;--a:0deg;--b:20deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="red" style="--sh:0;--a:53deg;--b:151deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="violet" style="--sh:0;--a:106deg;--b:282deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="purple" style="--sh:0;--a:159deg;--b:53deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="blue" style="--sh:0;--a:212deg;--b:184deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="green" style="--sh:0;--a:265deg;--b:315deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="brown" style="--sh:1;--a:97deg;--b:61deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="red" style="--sh:1;--a:150deg;--b:192deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="violet" style="--sh:1;--a:203deg;--b:323deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="purple" style="--sh:1;--a:256deg;--b:94deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="blue" style="--sh:1;--a:309deg;--b:225deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="green" style="--sh:1;--a:2deg;--b:356deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="brown" style="--sh:2;--a:194deg;--b:102deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="red" style="--sh:2;--a:247deg;--b:233deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="violet" style="--sh:2;--a:300deg;--b:4deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="purple" style="--sh:2;--a:353deg;--b:135deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="blue" style="--sh:2;--a:46deg;--b:266deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="green" style="--sh:2;--a:99deg;--b:37deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="brown" style="--sh:3;--a:291deg;--b:143deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="red" style="--sh:3;--a:344deg;--b:274deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="violet" style="--sh:3;--a:37deg;--b:45deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="purple" style="--sh:3;--a:90deg;--b:176deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="blue" style="--sh:3;--a:143deg;--b:307deg"><b class="mk"></b><u></u><s></s></i><i class="ck" data-hue="green" style="--sh:3;--a:196deg;--b:78deg"><b class="mk"></b><u></u><s></s></i></div>
+  <div class="t-body reveal" style="grid-column:8/12;grid-row:2/4;--d:90ms">
     <p>VERITAS is not just a location. It’s a way of living and working. Of thinking. Of acting. Here, we create spaces that invite people to challenge the way we live and work. We host, house, and hone creative thinkers from diverse disciplines: the arts, sciences, technology, and business.</p>
     <p>In doing so, we foster transformative ideas for urban living and working in the future. Together, we don’t just plan these spaces, we create them. Test them. Live and work in them. In real life and real time. So communities worldwide can adopt them.</p>
     <p>Our spirit was born in our hometown, Wittenberge. Inspired by the town’s legacy of innovation and making things that last. We carry this legacy forward. But in times of rapid change, we dare to be slow. Because we believe true progress comes from slowing down.</p>
@@ -94,15 +104,6 @@
   <div class="stage" data-urbanotop data-view="plan"><canvas aria-label="The plan of the VERITAS site, with the numbers of its buildings"></canvas></div>
 </section>
 
-<!-- Story: the initiator first, then Chaussee36 with its four pictures -->
-<section class="pg white" data-ground="light" style="--rows:6">
-  <p class="t-label">Story</p>
-  <h2 class="t-caps reveal" style="grid-column:1/8">The Initiator</h2>
-  <div class="t-body reveal" style="grid-column:8/12;--d:90ms">
-    <p>The driving force behind VERITAS is its initiator, whose vision was simple: bring people together and use their creativity to create something extraordinary. Something that might change the course of action and our current paradigm. Inspired by Wittenberge’s legacy of craftsmanship and its history of making things that last, he set out to create a space where bold ideas could not only exist but thrive.</p>
-    <p>His belief that the world needs to balance art and commerce, nature and technology first led him to develop the Chaussee36 project, which acts as the prototype for the Urbanotop that VERITAS will become. VERITAS is a testament to his early success and the enduring power of that vision: a place where the future is being built, brick by brick, idea by idea.</p>
-  </div>
-</section>
 <!-- Story: Chaussee36 with its four pictures, then the initiator -->
 <section class="pg white" data-ground="light" style="--rows:6;border-top:0">
   <p class="t-label">Story</p>
@@ -116,6 +117,21 @@
     <button type="button" style="--s:7;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/c36_2.jpg" alt="Chaussee36" loading="lazy"></button>
     <button type="button" style="--s:5;--sp:6;--r:auto" aria-label="Open the picture"><img src="img/c36_3.jpg" alt="Chaussee36" loading="lazy"></button>
   </div>
+</section>
+
+<!-- client remark 23 ("This should be moved. It should be about the Veritas team. We need to show who is behind Veritas"): the words on the initiator, moved here
+     from above Chaussee36, open the block of the team; the invitation of the live page follows it. Names and roles: the press read on 20 Nov (../sources/NOTES.md).
+     No portrait was given: the team is a list of names, each on its line with its role. -->
+<section class="pg white" data-ground="light" style="--rows:6">
+  <p class="t-label">Team</p>
+  <h2 class="t-caps reveal" style="grid-column:1/8">The Initiator</h2>
+  <div class="t-body reveal" style="grid-column:8/12;--d:90ms">
+    <p>The driving force behind VERITAS is its initiator, whose vision was simple: bring people together and use their creativity to create something extraordinary. Something that might change the course of action and our current paradigm. Inspired by Wittenberge’s legacy of craftsmanship and its history of making things that last, he set out to create a space where bold ideas could not only exist but thrive.</p>
+    <p>His belief that the world needs to balance art and commerce, nature and technology first led him to develop the Chaussee36 project, which acts as the prototype for the Urbanotop that VERITAS will become. VERITAS is a testament to his early success and the enduring power of that vision: a place where the future is being built, brick by brick, idea by idea.</p>
+  </div>
+</section>
+<section class="white" data-ground="light" style="padding-bottom:calc(var(--row)*.8)">
+  <div class="team"><div class="trow reveal" style="--d:0ms"><h3>Renaud Vercouter</h3><p>Initiator</p></div><div class="trow reveal" style="--d:60ms"><h3>Andra Schumann</h3><p>Chief architect</p></div><div class="trow reveal" style="--d:120ms"><h3>Shilpanjali Sunita Rao</h3><p>Head of research</p></div><div class="trow reveal" style="--d:180ms"><h3>Florian Uthoff</h3><p>Spokesperson</p></div><div class="trow reveal" style="--d:240ms"><h3>Tekla Lobjanidze</h3><p>Property management</p></div><div class="trow reveal" style="--d:300ms"><h3>Vanesa Guerrero</h3><p>Property management</p></div></div>
 </section>
 
 <!-- the height of this block is the screen divided by the golden number (61.8 %), the sentence stands on the golden line of the block and takes 61.8 % of its width -->
@@ -148,7 +164,7 @@
 <script src="veritas.js?v=70"></script>
 <script src="symbol.js?v=43"></script>
 <script src="de.js?v=31"></script>
-<script src="i18n.js?v=53" defer></script>
+<script src="i18n.js?v=54" defer></script>
 <script src="later.js?v=1" data-near="[data-urbanotop],.stack .view" data-load="lib/three.min.js,site_map.js?v=34,urb_kit.js?v=37,urb_water.js?v=37,urb_ground.js?v=37,urb_rail.js?v=37,urb_roofs.js?v=37,urb_trees.js?v=53,urb_sign.js?v=37,urbanotop.js?v=54"></script>
 </body>
 </html>
