@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="at-top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="light only">
+<title>Contact, VERITAS</title>
+<link rel="icon" href="img/favicon.svg">
+<link rel="stylesheet" href="veritas.css?v=84">
+<script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
+</head>
+<!-- VERITAS, the Contact page (the tenant form of the live site). Written by hand, 22 Nov 2026 (round 6). Words: veritas-park.eu/tenant-contact-form, question for question. -->
+<body class="v" data-hue="turquoise">
+
+<div class="gate" aria-hidden="true"><svg data-symbol viewBox="-40 -40 80 80"></svg></div>
+
+<header class="head">
+  <a class="logo" href="index.html" aria-label="VERITAS, home"><i class="mk"></i>
+    <svg class="clock" viewBox="0 0 296 296.01" aria-hidden="true"><line class="hand" x1="148" y1="148.005" x2="148" y2="104.08" stroke="currentColor" stroke-width="5.04"/><line class="hand" x1="148" y1="148.005" x2="148" y2="71.61" stroke="currentColor" stroke-width="5.04"/></svg></a>
+  <nav class="bar" aria-label="Pages"><a href="index.html">Home</a><a href="rent.html">Rent</a><a href="invest.html">Invest</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<nav class="nav dark" id="nav" aria-label="Menu" inert>
+  <ul>
+    <li><a class="sign one" href="index.html" style="--i:0;--d:0ms"><i class="ic" style="--u:url(img/icons/tower.svg)"></i><span>Home</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="rent.html" style="--i:1;--d:70ms"><i class="ic" style="--u:url(img/icons/space_to_rent.svg)"></i><span>Rent</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="invest.html" style="--i:2;--d:140ms"><i class="ic" style="--u:url(img/icons/economy.svg)"></i><span>Invest</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="about.html" style="--i:3;--d:210ms"><i class="ic" style="--u:url(img/icons/stairs.svg)"></i><span>About</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="contact.html" aria-current="page" style="--i:4;--d:280ms"><i class="ic" style="--u:url(img/icons/mail.svg)"></i><span>Contact</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+  </ul>
+  <div class="foot"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></div>
+</nav>
+
+<main>
+
+<!-- the opening: a full picture of the place, the name of the page, the line and the welcome of the live page -->
+<section class="top2" data-ground="dark">
+  <img src="img/place/b13_132.jpg" srcset="img/place/m/b13_132.jpg 1280w, img/place/b13_132.jpg 2000w" alt="A hall of building 13" fetchpriority="high">
+  <div>
+    <span class="t-brush reveal">Contact</span>
+    <h1 class="t-line reveal" style="--d:90ms">Big Ideas Need Space!<br><a class="pill" href="#form">Find yours</a> in VERITAS</h1>
+    <p class="t-body reveal" style="--d:160ms">Welcome, we are more than happy to help you find the perfect space for your needs.</p>
+  </div>
+</section>
+
+<!-- the form: its name, then the questions of the live site on the left and where to write on the right -->
+<section class="pg white" data-ground="light" id="form" style="border-top:0">
+  <p class="t-label">Tenant contact form</p>
+  <aside class="aside side" style="grid-column:1/5">
+    <svg class="dial-p" data-progress viewBox="-40 -40 80 80" aria-hidden="true"></svg>
+    <p class="t-body">If there are any questions, please reach out to</p>
+    <p class="t-serif m" style="margin-top:.3em"><a href="mailto:info@veritas-park.eu" style="text-decoration:none">info@veritas-park.eu</a></p>
+    <div class="sbtns"><a class="sbtn" href="contact-invest.html"><span>Invest in Impact</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></div>
+  </aside>
+  <form class="form" action="mailto:info@veritas-park.eu" method="post" enctype="text/plain" style="grid-column:6/13">
+    <!-- the form opens the visitor's mail with the answers. To wire to the client's form service when the site goes live. -->
+    <label class="q"><span>Please tell us a bit about yourself and your company. *</span><input type="text" name="Name" required></label>
+    <label class="q"><span>E-Mail *</span><input type="email" name="E-Mail" required></label>
+    <div class="two">
+      <label class="q"><span>Number of Employees *</span><input type="number" name="Number of Employees" required></label>
+      <label class="q"><span>Field of Industry *</span><input type="text" name="Field of Industry" required></label>
+    </div>
+    <label class="q"><span>Product and/or services offered *</span><input type="text" name="Product and/or services offered" required></label>
+    <div class="two">
+      <label class="q"><span>Address Line 1</span><input type="text" name="Address Line 1"></label>
+      <label class="q"><span>Address Line 2</span><input type="text" name="Address Line 2"></label>
+      <label class="q"><span>City</span><input type="text" name="City"></label>
+      <label class="q"><span>State / Province / Region</span><input type="text" name="State / Province / Region"></label>
+      <label class="q"><span>Postal Code</span><input type="text" name="Postal Code"></label>
+      <label class="q"><span>Country</span><input type="text" name="Country"></label>
+    </div>
+    <fieldset class="q"><legend>Company Location</legend><div class="opts">
+      <label><input type="radio" name="Location" value="Main office"><span>Main office</span></label>
+      <label><input type="radio" name="Location" value="Branch location"><span>Branch location</span></label></div></fieldset>
+    <fieldset class="q"><legend>How do you plan to use the space? *</legend><div class="opts">
+      <label><input type="radio" name="Use of the space" value="Office" required><span>Office</span></label>
+      <label><input type="radio" name="Use of the space" value="Studio"><span>Studio</span></label>
+      <label><input type="radio" name="Use of the space" value="Event"><span>Event</span></label>
+      <label><input type="radio" name="Use of the space" value="Others"><span>Others (please specify)</span></label></div></fieldset>
+    <label class="q" data-if="Use of the space=Others"><span>Please specify</span><input type="text" name="Use, specified"></label>
+    <label class="q"><span>What would you like to offer or contribute to the community?</span><textarea name="Contribution to the community"></textarea></label>
+    <fieldset class="q"><legend>How many square meters are you looking to rent? *</legend><div class="opts">
+      <label><input type="radio" name="Square meters" value="Small (under 100 sqm)" required><span>Small (under 100 sqm)</span></label>
+      <label><input type="radio" name="Square meters" value="Medium (100 - 400 sqm)"><span>Medium (100 - 400 sqm)</span></label>
+      <label><input type="radio" name="Square meters" value="Large (400+ sqm)"><span>Large (400+ sqm)</span></label></div></fieldset>
+    <fieldset class="q"><legend>If for rental, are you looking for private office or a shared/co-working space?</legend><div class="opts">
+      <label><input type="radio" name="Private or shared" value="Private office"><span>Private office</span></label>
+      <label><input type="radio" name="Private or shared" value="Shared/ co- working space"><span>Shared/ co- working space</span></label>
+      <label><input type="radio" name="Private or shared" value="Flexible"><span>Flexible</span></label></div></fieldset>
+    <label class="q"><span>When do you plan to move in?</span><input type="date" name="Move in"></label>
+    <fieldset class="q"><legend>Does your team need nearby accommodation options?</legend><div class="opts">
+      <label><input type="radio" name="Accommodation" value="Yes"><span>Yes</span></label>
+      <label><input type="radio" name="Accommodation" value="No"><span>No</span></label>
+      <label><input type="radio" name="Accommodation" value="Possibly"><span>Possibly, depending on availability</span></label></div></fieldset>
+    <fieldset class="q"><legend>What is your preferred commuting distance to the workspace?</legend><div class="opts">
+      <label><input type="radio" name="Commuting" value="An hour"><span>Comfortable with an hour's commute</span></label>
+      <label><input type="radio" name="Commuting" value="Closer"><span>Prefer closer proximity</span></label>
+      <label><input type="radio" name="Commuting" value="Occasional"><span>Occasional commuting only</span></label></div></fieldset>
+    <fieldset class="q"><legend>How important is it for your team to have access to green spaces, shared resources, and a community of like-minded businesses?</legend><div class="opts">
+      <label><input type="radio" name="Green spaces and community" value="Essential"><span>Essential to our daily experience</span></label>
+      <label><input type="radio" name="Green spaces and community" value="Valuable"><span>Valuable, but not essential</span></label>
+      <label><input type="radio" name="Green spaces and community" value="Not important"><span>Not important</span></label></div></fieldset>
+    <fieldset class="q"><legend>Would amenities like sports, wellness, and cultural activities support your team’s work-life balance?</legend><div class="opts">
+      <label><input type="radio" name="Amenities" value="Very helpful"><span>Very helpful</span></label>
+      <label><input type="radio" name="Amenities" value="Somewhat helpful"><span>Somewhat helpful</span></label>
+      <label><input type="radio" name="Amenities" value="Not necessary"><span>Not necessary</span></label></div></fieldset>
+    <fieldset class="q"><legend>How valuable is local networking with nearby businesses, institutions, and potential partners?</legend><div class="opts">
+      <label><input type="radio" name="Local networking" value="Essential for growth"><span>Essential for growth</span></label>
+      <label><input type="radio" name="Local networking" value="Nice to have"><span>Nice to have</span></label>
+      <label><input type="radio" name="Local networking" value="Not necessary"><span>Not necessary</span></label></div></fieldset>
+    <label class="q"><span>Anything else you'd like to share about your ideal workspace?</span><textarea name="Anything else"></textarea></label>
+    <fieldset class="q"><legend>Let us know if you agree to send you our newsletter</legend><div class="opts">
+      <label><input type="radio" name="Newsletter" value="I accept"><span>I accept</span></label>
+      <label><input type="radio" name="Newsletter" value="I don't accept"><span>I don't accept</span></label></div></fieldset>
+    <div><button class="sbtn" type="submit"><span>Submit</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></button></div>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer dark end" data-ground="dark">
+  <div class="g">
+    <div class="c logo" style="--s:5;--sp:6"><i class="mk"></i></div>
+    <div class="c col" style="--s:2;--sp:3;--at:7"><b>VERITAS Park</b><p>Bad Wilsnacker Str. 48<br>19322 Wittenberge</p><p><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a></p></div>
+    <div class="c col" style="--s:2;--sp:3"><b>BKLV Management GmbH</b><p>Chausseestraße 36<br>10115 Berlin</p></div>
+    <div class="c col" style="--s:2;--sp:6"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><p><a href="imprint.html">Imprint</a><a href="privacy.html">Privacy Policy</a></p></div>
+  </div>
+</footer>
+
+<script src="veritas.js?v=65"></script>
+<script src="symbol.js?v=43"></script>
+<script src="de.js?v=31"></script>
+<script src="i18n.js?v=49" defer></script>
+</body>
+</html>

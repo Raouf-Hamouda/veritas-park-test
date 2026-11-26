@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" class="at-top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="light only">
+<title>VERITAS, a place where ideas take action</title>
+<link rel="icon" href="img/favicon.svg">
+<link rel="stylesheet" href="veritas.css?v=84">
+<script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
+</head>
+<!-- VERITAS, the home page. Written by hand, 22 Nov 2026 (round 3). No build script makes this file.
+     Words and pictures: the live site veritas-park.eu. Look: the brand book (see ../DA_MESURES.md).
+     Order of the page: the opening in twelve pictures, the wheel, Vision, Fields of Innovation, the place in 3D, About, News, Invest, the gallery. -->
+<body class="v" data-hue="red">
+
+<!-- the arrival: the symbol builds itself round the circle, the move chosen on 20 Nov (SYMBOL.html) -->
+<div class="gate" aria-hidden="true"><svg data-symbol viewBox="-40 -40 80 80"></svg></div>
+
+<header class="head">
+  <a class="logo" href="index.html" aria-label="VERITAS, home">
+    <i class="mk"></i>
+    <svg class="clock" viewBox="0 0 296 296.01" aria-hidden="true">
+      <line class="hand" x1="148" y1="148.005" x2="148" y2="104.08" stroke="currentColor" stroke-width="5.04"/>
+      <line class="hand" x1="148" y1="148.005" x2="148" y2="71.61" stroke="currentColor" stroke-width="5.04"/>
+    </svg>
+  </a>
+  <nav class="bar" aria-label="Pages">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="rent.html">Rent</a>
+    <a href="invest.html">Invest</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span>
+  </nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<!-- the menu of a phone: wall signs -->
+<nav class="nav dark" id="nav" aria-label="Menu" inert>
+  <ul>
+    <li><a class="sign one" href="index.html" aria-current="page" style="--i:0;--d:0ms"><i class="ic" style="--u:url(img/icons/tower.svg)"></i><span>Home</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="rent.html" style="--i:1;--d:70ms"><i class="ic" style="--u:url(img/icons/space_to_rent.svg)"></i><span>Rent</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="invest.html" style="--i:2;--d:140ms"><i class="ic" style="--u:url(img/icons/economy.svg)"></i><span>Invest</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="about.html" style="--i:3;--d:210ms"><i class="ic" style="--u:url(img/icons/stairs.svg)"></i><span>About</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="contact.html" style="--i:4;--d:280ms"><i class="ic" style="--u:url(img/icons/mail.svg)"></i><span>Contact</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+  </ul>
+  <div class="foot"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></div>
+</nav>
+
+<main>
+
+<!-- ============ THE OPENING: the place in twelve pictures, one per vocation, like the twelve hours ============
+     Which vocation for which picture: the number of the building is in the name of the photograph on the live site;
+     what each building becomes is in the press read on 20 Nov and in the names of the floor plans of the live site. -->
+<section class="hero" data-ground="dark" aria-roledescription="carousel" aria-label="The place, in twelve pictures">
+  <div class="hero-pics">
+    <figure class="on" data-name="VERITAS" data-line="Space for big ideas"><img src="img/place/epp_9195.jpg" srcset="img/place/m/epp_9195.jpg 1280w, img/place/epp_9195.jpg 2000w" alt="The letters VERITAS on the roof of the factory" fetchpriority="high"></figure>
+    <figure data-name="Hotel" data-line="Building 13"><img data-src="img/place/b13_219.jpg" data-srcset="img/place/m/b13_219.jpg 1280w, img/place/b13_219.jpg 2000w" alt="A hall of building 13, the future hotel"></figure>
+    <figure data-name="The Factory" data-line="Wittenberge"><img data-src="img/place/aerial_0.jpg" data-srcset="img/place/m/aerial_0.jpg 1280w, img/place/aerial_0.jpg 2000w" alt="The factory and its quarter seen from the air"></figure>
+    <figure data-name="Offices and Co-working" data-line="Building 13"><img data-src="img/place/b13f2_23.jpg" data-srcset="img/place/m/b13f2_23.jpg 1280w, img/place/b13f2_23.jpg 2000w" alt="A hall of building 13"></figure>
+    <figure data-name="Office Hotel" data-line="Building 13, second floor"><img data-src="img/place/b13f2_38.jpg" data-srcset="img/place/m/b13f2_38.jpg 1280w, img/place/b13f2_38.jpg 2000w" alt="The second floor of building 13"></figure>
+    <figure data-name="Work Spaces" data-line="Building 7"><img data-src="img/place/b7_140.jpg" data-srcset="img/place/m/b7_140.jpg 1280w, img/place/b7_140.jpg 2000w" alt="A white hall of building 7"></figure>
+    <figure data-name="Conference Hall" data-line="Building 14, for conferences and performances"><img data-src="img/place/b14_01.jpg" data-srcset="img/place/m/b14_01.jpg 1280w, img/place/b14_01.jpg 2000w" alt="The old canteen, building 14"></figure>
+    <figure data-name="Events and Club" data-line="Building 2"><img data-src="img/place/b2_101.jpg" data-srcset="img/place/m/b2_101.jpg 1280w, img/place/b2_101.jpg 2000w" alt="The old power house, building 2"></figure>
+    <figure data-name="Sport" data-line="Building 4, with a restaurant on the water"><img data-src="img/place/b4roof_038.jpg" data-srcset="img/place/m/b4roof_038.jpg 1280w, img/place/b4roof_038.jpg 2000w" alt="The factory seen from the roof of building 4"></figure>
+    <figure data-name="Light Industry" data-line="Building 110"><img data-src="img/place/b110_14.jpg" data-srcset="img/place/m/b110_14.jpg 1280w, img/place/b110_14.jpg 2000w" alt="The shed of building 110"></figure>
+    <figure data-name="By the River" data-line="16 hectares of green"><img data-src="img/place/around_081.jpg" data-srcset="img/place/m/around_081.jpg 1280w, img/place/around_081.jpg 2000w" alt="The river beside the factory"></figure>
+    <figure data-name="The Clock Tower" data-line="Wittenberge"><img data-src="img/place/b13_031.jpg" data-srcset="img/place/m/b13_031.jpg 1280w, img/place/b13_031.jpg 1707w" alt="The clock tower"></figure>
+  </div>
+  <div class="hero-shade"></div>
+  <div class="g hero-in">
+    <div class="c" style="--s:7;--sp:6">
+      <h1>A place where ideas<br><a class="pill" href="#spaces">take action</a></h1>
+      <div class="sbtns">
+        <a class="sbtn" href="#spaces"><span>See the spaces</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        <a class="sbtn" href="contact.html"><span>Get in touch</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+      </div>
+    </div>
+    <div class="c" style="--s:5;--sp:6">
+      <div class="place">
+        <div class="txt"><b><u></u></b><span><u></u></span></div>
+        <div class="dial"><svg data-dial viewBox="-40 -40 80 80" role="group" aria-label="The twelve pictures"></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE WHEEL: the same twelve places on a dial you turn by hand (the book draws its website this way, p37) ============ -->
+<section class="wheel-sec dark" data-ground="dark" id="spaces">
+  <div class="wheel" tabindex="0" role="group" aria-label="Twelve pictures of the place on a wheel. Turn it with the arrow keys.">
+    <i class="pointer"></i>
+    <div class="ring">
+      <button class="card" type="button" data-name="VERITAS" data-line="Space for big ideas"><img data-src="img/place/epp_9195.jpg" data-srcset="img/place/m/epp_9195.jpg 1280w, img/place/epp_9195.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>VERITAS</em></button>
+      <button class="card" type="button" data-name="Hotel" data-line="Building 13"><img data-src="img/place/b13_219.jpg" data-srcset="img/place/m/b13_219.jpg 1280w, img/place/b13_219.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Hotel</em></button>
+      <button class="card" type="button" data-name="The Factory" data-line="Wittenberge"><img data-src="img/place/aerial_0.jpg" data-srcset="img/place/m/aerial_0.jpg 1280w, img/place/aerial_0.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>The Factory</em></button>
+      <button class="card" type="button" data-name="Offices and Co-working" data-line="Building 13"><img data-src="img/place/b13f2_23.jpg" data-srcset="img/place/m/b13f2_23.jpg 1280w, img/place/b13f2_23.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Offices and Co-working</em></button>
+      <button class="card" type="button" data-name="Office Hotel" data-line="Building 13, second floor"><img data-src="img/place/b13f2_38.jpg" data-srcset="img/place/m/b13f2_38.jpg 1280w, img/place/b13f2_38.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Office Hotel</em></button>
+      <button class="card" type="button" data-name="Work Spaces" data-line="Building 7"><img data-src="img/place/b7_140.jpg" data-srcset="img/place/m/b7_140.jpg 1280w, img/place/b7_140.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Work Spaces</em></button>
+      <button class="card" type="button" data-name="Conference Hall" data-line="Building 14, for conferences and performances"><img data-src="img/place/b14_01.jpg" data-srcset="img/place/m/b14_01.jpg 1280w, img/place/b14_01.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Conference Hall</em></button>
+      <button class="card" type="button" data-name="Events and Club" data-line="Building 2"><img data-src="img/place/b2_101.jpg" data-srcset="img/place/m/b2_101.jpg 1280w, img/place/b2_101.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Events and Club</em></button>
+      <button class="card" type="button" data-name="Sport" data-line="Building 4, with a restaurant on the water"><img data-src="img/place/b4roof_038.jpg" data-srcset="img/place/m/b4roof_038.jpg 1280w, img/place/b4roof_038.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Sport</em></button>
+      <button class="card" type="button" data-name="Light Industry" data-line="Building 110"><img data-src="img/place/b110_14.jpg" data-srcset="img/place/m/b110_14.jpg 1280w, img/place/b110_14.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>Light Industry</em></button>
+      <button class="card" type="button" data-name="By the River" data-line="16 hectares of green"><img data-src="img/place/around_081.jpg" data-srcset="img/place/m/around_081.jpg 1280w, img/place/around_081.jpg 2000w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>By the River</em></button>
+      <button class="card" type="button" data-name="The Clock Tower" data-line="Wittenberge"><img data-src="img/place/b13_031.jpg" data-srcset="img/place/m/b13_031.jpg 1280w, img/place/b13_031.jpg 1707w" sizes="(max-width:820px) 82vw, 34vw" alt="" draggable="false"><em>The Clock Tower</em></button>
+    </div>
+  </div>
+  <div class="wheel-cap">
+    <button class="round back" data-turn="-1" aria-label="Previous"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M2.5 50H95"/><path d="M62.5 17.5L95 50L62.5 82.5"/></svg></button>
+    <div class="who"><span class="cnt"></span><b></b><span></span></div>
+    <button class="round" data-turn="1" aria-label="Next"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M2.5 50H95"/><path d="M62.5 17.5L95 50L62.5 82.5"/></svg></button>
+  </div>
+  <div class="meet">
+    <span class="t-brush reveal">Meet VERITAS</span>
+    <h2 class="t-caps m reveal" style="--d:90ms">At VERITAS, we host, house, and hone creative thinkers</h2>
+  </div>
+</section>
+
+<!-- ============ VISION: a page of the book (p7): the name at the top, the sentence standing at the foot, a narrow column of text, a picture as a column ============ -->
+<section class="pg white" data-ground="light" style="--rows:6">
+  <p class="t-label">Vision</p>
+  <h2 class="t-line reveal" style="grid-column:1/8">When you come to VERITAS you <a class="pill" href="about.html">challenge</a> your way of life.</h2>
+  <div class="t-body reveal" style="grid-column:8/11;--d:90ms">
+    <p>VERITAS is not just a location. It’s a way of living and working. Of thinking. Of acting. Here, we create spaces that invite people to challenge the way we live and work.</p>
+    <p>Our goal: a transition towards a sustainable urban future. These topics are at our core.</p>
+  </div>
+  <div class="col-pic reveal" style="grid-column:11/13;grid-row:1/3;margin:calc(var(--row)*-.28) calc(var(--m)*-1) calc(var(--row)*-.5) 0;--d:160ms"><img src="img/place/b7_213.jpg" srcset="img/place/m/b7_213.jpg 1280w, img/place/b7_213.jpg 2000w" alt="The clock tower seen through a window of building 7" loading="lazy"></div>
+</section>
+
+<!-- the picture that follows the slide show on the live home page -->
+<section data-ground="dark"><div class="bleed"><img src="img/place/epp_9121.jpg" srcset="img/place/m/epp_9121.jpg 1280w, img/place/epp_9121.jpg 2000w" alt="The factory" loading="lazy"></div></section>
+
+<!-- ============ FIELDS OF INNOVATION: six squares; each carries the colour column of its hue (p21) and lights up in it ============ -->
+<section class="white" data-ground="light" style="padding-bottom:calc(var(--row)*.6)">
+  <div class="pg" style="--rows:3;border-top:0"><h2 class="t-caps m reveal" style="grid-column:1/-1;grid-row:2">Fields of Innovation</h2></div>
+  <div class="fields2">
+    <article class="fld" data-hue="brown" tabindex="0"><i class="lit"></i><i class="col"></i>
+      <svg class="ico draw" viewBox="0 0 100 100" aria-hidden="true"><path d="M32.5 97.5V2.5"/><path d="M12.5 22.5H97.5"/><path d="M32.5 2.5L67.1 22.5"/><path d="M17.5 27.5V40"/><path d="M82.5 25V52.5"/><path d="M72.5 57.5H92.5V75H72.5Z"/><path d="M15 97.5H50"/></svg>
+      <h3>Construction</h3><p>VERITAS develops sustainable solutions with new materials and modular construction, while revitalizing existing buildings as prototypes for sustainable heritage.</p></article>
+    <article class="fld" data-hue="red" tabindex="0"><i class="lit"></i><i class="col"></i>
+      <svg class="ico draw" viewBox="0 0 100 100" aria-hidden="true"><path d="M17.5 20H82.5V67.5H17.5Z"/><path d="M2.5 80H97.5"/><path d="M30 35H55"/><path d="M30 47.5H45"/></svg>
+      <h3>Work</h3><p>Work styles are evolving and have rapidly transitioned in recent years. Veritas explores new approaches to work-life blending and the future of workspaces.</p></article>
+    <article class="fld" data-hue="violet" tabindex="0"><i class="lit"></i><i class="col"></i>
+      <svg class="ico draw" viewBox="0 0 100 100" aria-hidden="true"><path d="M2.5 97.5H97.5"/><path d="M15 90V65"/><path d="M37.5 90V47.5"/><path d="M60 90V30"/><path d="M82.5 90V12.5"/></svg>
+      <h3>Economy</h3><p>VERITAS is a testbed for a collaborative, shared economic model, fostering the exchange of ideas, knowledge, and tools to drive innovation and collaboration.</p></article>
+    <article class="fld" data-hue="purple" tabindex="0"><i class="lit"></i><i class="col"></i>
+      <svg class="ico draw" viewBox="0 0 100 100" aria-hidden="true"><path d="M22.5 77.5V20a12.5 12.5 0 0 1 12.5 -12.5H65a12.5 12.5 0 0 1 12.5 12.5V77.5Z"/><path d="M32.5 20H67.5V45H32.5Z"/><path d="M32.5 62.5H42.5"/><path d="M57.5 62.5H67.5"/><path d="M32.5 85L25 98"/><path d="M67.5 85L75 98"/></svg>
+      <h3>Mobility</h3><p>The future of mobility is the 15-minute city, with shorter commutes, less traffic, greater quality of life. VERITAS develops sustainable, efficient mobility solutions.</p></article>
+    <article class="fld" data-hue="blue" tabindex="0"><i class="lit"></i><i class="col"></i>
+      <svg class="ico draw" viewBox="0 0 100 100" aria-hidden="true"><path d="M57.5 2.5L25 55H47.5L40 97.5L75 42.5H52.5Z"/></svg>
+      <h3>Energy</h3><p>Renewable energy is the key to our futures. VERITAS proposes innovative solutions and uses digital technologies to make energy systems more efficient.</p></article>
+    <article class="fld" data-hue="turquoise" tabindex="0"><i class="lit"></i><i class="col"></i>
+      <svg class="ico draw" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5L74.44 52.39A27.5 27.5 0 1 1 25.56 52.39Z"/><path d="M35 65A15 15 0 0 0 50 80"/></svg>
+      <h3>Water</h3><p>Rainwater and wastewater management are crucial to protecting the natural environment on which Veritas Park sits. VERITAS incorporates sustainable approaches to conserve water locally and globally.</p></article>
+  </div>
+</section>
+
+<!-- ============ ABOUT: a page of the book (p7): Ulrich in small letters standing at the foot, the text and the sign beside it, on the same line of foot ============ -->
+<section class="pg pastel" data-ground="light" style="--rows:6">
+  <p class="t-label">About</p>
+  <h2 class="t-serif reveal" style="grid-column:1/8">Let’s co-create a nurturing space for big ideas that continually challenges the way we live and work, for the better.</h2>
+  <div class="reveal" style="grid-column:8/12;--d:90ms">
+    <p class="t-body">VERITAS hosts, houses, and hones creative thinkers from diverse disciplines: the arts, sciences, technology, and business. In doing so, its tenants and collaborators will foster transformative ideas for urban living and working in the future.</p>
+    <div class="sbtns"><a class="sbtn" href="about.html"><span>About VERITAS</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ============ NEWS: the thirteen news of the live home page, each with its own picture, on a line pulled sideways (the programme of the book, p38) ============ -->
+<section class="white" data-ground="light" style="padding-bottom:calc(var(--row)*.5)">
+  <div class="pg" style="--rows:3;border-top:0">
+    <h2 class="t-caps m reveal" style="grid-column:1/10;grid-row:2">News</h2>
+    <div class="strip-ctl" style="grid-column:10/13;grid-row:2;padding:0 0 .9em"><button class="round back" data-move="-1" aria-label="Earlier news"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M2.5 50H95"/><path d="M62.5 17.5L95 50L62.5 82.5"/></svg></button><button class="round" data-move="1" aria-label="More news"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M2.5 50H95"/><path d="M62.5 17.5L95 50L62.5 82.5"/></svg></button></div>
+  </div>
+  <div class="strip">
+    <article><figure><img src="img/news_bbik.jpg" alt="" loading="lazy"></figure><h3 class="title">BBIK Award Article &amp; History</h3><div class="body"><p>The Wittenberge sewing machine factory is the first factory to be awarded the title of Historic Landmark of Civil Engineering in Germany, celebrating its rich history and sustainability.</p></div><a class="sbtn s" href="https://wahrzeichen.ingenieurbaukunst.de/wahrzeichen/das-naehmaschinenwerk-wittenberge/" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_funding.jpg" alt="" loading="lazy"></figure><h3 class="title">VERITAS receives €2.8M in Federal Funding</h3><div class="body"><p>Approved in September 2023 by The Budget Committee of the German Bundestag, the funding commitment is an important signal for the further development of the area, which is unique even beyond Wittenberge.</p></div><a class="sbtn s" href="https://www.wittenberge.de/news/1/869786/nachrichten/28-millionen-euro-f%C3%BCr-entwicklung-des-veritas-parks.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_film.jpg" alt="" loading="lazy"></figure><h3 class="title">The Wittenberge Sewing Machine Factory, Historical Landmark of Engineering</h3><div class="body"><p>Produced by Hello Studio W, this mini-doc was created to honor the historical landmark of the Singer Sewing Machine factory. In between aerial views of the factory and archival footage, we hear from local experts Christian Von Hagen and Sven Bardua.</p></div><a class="sbtn s" href="https://www.youtube.com/watch?v=jnGKABSUUIU" target="_blank" rel="noopener"><span>Watch the video</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_tagesspiegel.jpg" alt="" loading="lazy"></figure><h3 class="title">Industrial Architecture: Start of Construction for New Urban District in Wittenberge Draws Closer</h3><div class="body"><p>In Wittenberge, an old industrial site is set to be brought back to life over the coming years. Another hurdle has now been cleared.</p></div><a class="sbtn s" href="https://www.tagesspiegel.de/berlin/industriearchitektur-baubeginn-fur-neues-stadtquartier-in-wittenberge-ruckt-naher-14982056.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_5.jpg" alt="" loading="lazy"></figure><h3 class="title">Veritas Park in Wittenberge is getting a new hotel, co-working spaces, and a restaurant.</h3><a class="sbtn s" href="https://www.maz-online.de/lokales/prignitz/wittenberge/veritas-park-in-wittenberge-neues-hotel-mit-140-zimmern-140-euro-kostet-die-nacht-HXJRAOHUPJH2XP5YIASRK5TVLM.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_6.jpg" alt="" loading="lazy"></figure><h3 class="title">Veritas Park is part of the State Garden Show Wittenberge 2027</h3><a class="sbtn s" href="https://www.laga-wittenberge.de/veritas-park-ist-teil-der-landesgartenschau-wittenberge-2027/" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_7.jpg" alt="" loading="lazy"></figure><h3 class="title">Veritas Phase 1 chief architect Andra Schumann with Federal Minister of Construction Robert Crumbach (SPD) in Veritas Park in Wittenberge.</h3><a class="sbtn s" href="https://www.maz-online.de/lokales/prignitz/wittenberge/veritas-park-in-wittenberge-bauarbeiten-hotel-millionen-investition-und-konzert-im-sommer-HR3UCGUDNNHCLASHCNSYKYI66I.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_8.jpg" alt="" loading="lazy"></figure><h3 class="title">Where Capital Meets Coast: Berlin-Brandenburg and Hamburg Join Forces in Wittenberge’s Emerging Innovation Hub</h3><a class="sbtn s" href="https://www.wittenberge.de/news/1/1034278/nachrichten/hauptstadtregion-berlin-brandenburg-trifft-metropolregion-hamburg-in-wittenberge.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_9.jpg" alt="" loading="lazy"></figure><h3 class="title">Regional Leadership Meets Visionary Investment: District Administrator Müller Tours the VERITAS Campus with Investor Renaud Vercouter</h3><a class="sbtn s" href="https://www.nordkurier.de/regional/prignitz/landrat-mueller-besucht-investor-renaud-vercouter-auf-dem-veritas-gelaende-3611778" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_10.jpg" alt="" loading="lazy"></figure><h3 class="title">Transformation Underway: Construction Begins on Flagship Hotel and Restaurant at VERITAS Park, Reimagining Wittenberge’s Future</h3><a class="sbtn s" href="https://www.nordkurier.de/regional/prignitz/zeit-der-ddr-naehmaschinen-ist-hier-lange-vorbei-arbeiten-fuer-hotel-und-restaurant-auf-veritas-gelaende-begonnen-3486106" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_9.jpg" alt="" loading="lazy"></figure><h3 class="title">Ambitious Futures in Motion: Investor Unveils Long-Term VERITAS Park Masterplan to Prignitz District Leadership</h3><a class="sbtn s" href="https://www.landkreis-prignitz.de/de/aktuelles/2010/2025_05_20_veritas.php" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_12.jpg" alt="" loading="lazy"></figure><h3 class="title">VERITAS initiators welcomed to Accept BBIK Award</h3><div class="body"><p>The former Singer sewing machine factory in Wittenberge was honored with the Historical Landmark of Civil Engineering in Germany Award in October 2024.</p></div><a class="sbtn s" href="https://www.bbik.de/index.php?id=11&amp;action=detail&amp;seminar_id=2712&amp;termin_id=3476" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+    <article><figure><img src="img/news_13.jpg" alt="" loading="lazy"></figure><h3 class="title">New Book: The Sewing Machine Factory of Wittenberge</h3><div class="body"><p>Sven Bardua wrote a historical review of the innovative civil engineering methods used in the construction of the Singer Sewing Machine Factory. His research offers new insights into the history of the Singer Company, Wittenberge, and early architecture of the 20th century.</p></div><a class="sbtn s" href="https://www.bbik.de/index.php?id=11&amp;action=detail&amp;seminar_id=2712&amp;termin_id=3476" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></article>
+  </div>
+</section>
+
+<!-- ============ INVEST: the section of the live home page that was missing in the first version ============ -->
+<section class="pg dark" data-ground="dark" style="--rows:6">
+  <p class="t-label" style="color:var(--on-dark-2)">Invest</p>
+  <h2 class="t-serif reveal" style="grid-column:1/8">VERITAS is a testbed for the future, inspired by the past.</h2>
+  <div class="reveal" style="grid-column:8/12;--d:90ms">
+    <p class="t-body">Inspired by the town’s legacy of innovation, the team behind VERITAS aims to make things that last. We invite communities worldwide to adopt, contribute and evolve further.</p>
+    <div class="sbtns"><a class="sbtn" href="invest.html"><span>Invest in VERITAS</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ============ the quotation of the live home page, beside the portrait the live page shows with it. No word stands on the face. ============ -->
+<section class="qsec dark" data-ground="dark">
+  <figure class="reveal"><img src="img/singer.jpg" alt="Isaac Merritt Singer" loading="lazy" style="object-position:50% 20%"></figure>
+  <div><i class="mark"></i><blockquote class="quote reveal">“We know what a person thinks not when he tells us what he thinks, but by his actions.”</blockquote><span class="t-brush said reveal" style="--d:120ms">Isaac Merritt Singer</span></div>
+</section>
+
+<!-- ============ THE GALLERY of the live home page: eighteen pictures of the place. A click opens one to the full screen. ============ -->
+<section class="white" data-ground="light">
+  <div class="mosaic" style="padding-top:calc(var(--row)*.5)">
+    <button type="button" style="--s:6;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/epp_0338.jpg" srcset="img/place/m/epp_0338.jpg 1280w, img/place/epp_0338.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:6;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/epp_0945.jpg" srcset="img/place/m/epp_0945.jpg 1280w, img/place/epp_0945.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:4;--sp:3;--r:3/2" aria-label="Open the picture"><img src="img/place/epp_1147.jpg" srcset="img/place/m/epp_1147.jpg 1280w, img/place/epp_1147.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:4;--sp:3;--r:3/2" aria-label="Open the picture"><img src="img/place/epp_1149.jpg" srcset="img/place/m/epp_1149.jpg 1280w, img/place/epp_1149.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:4;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/epp_9020.jpg" srcset="img/place/m/epp_9020.jpg 1280w, img/place/epp_9020.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:3;--sp:3;--r:auto" aria-label="Open the picture"><img src="img/place/b7_43.jpg" srcset="img/place/m/b7_43.jpg 1280w, img/place/b7_43.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:3;--sp:3;--r:auto" aria-label="Open the picture"><img src="img/place/b7_119.jpg" srcset="img/place/m/b7_119.jpg 1280w, img/place/b7_119.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:6;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/epp_9176.jpg" srcset="img/place/m/epp_9176.jpg 1280w, img/place/epp_9176.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:6;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/b13_132.jpg" srcset="img/place/m/b13_132.jpg 1280w, img/place/b13_132.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:3;--sp:3;--r:auto" aria-label="Open the picture"><img src="img/place/b14_01.jpg" srcset="img/place/m/b14_01.jpg 1280w, img/place/b14_01.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:3;--sp:3;--r:auto" aria-label="Open the picture"><img src="img/place/b110_14.jpg" srcset="img/place/m/b110_14.jpg 1280w, img/place/b110_14.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:4;--sp:3;--r:3/2" aria-label="Open the picture"><img src="img/place/b7_486.jpg" srcset="img/place/m/b7_486.jpg 1280w, img/place/b7_486.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:4;--sp:3;--r:3/2" aria-label="Open the picture"><img src="img/place/b7_487.jpg" srcset="img/place/m/b7_487.jpg 1280w, img/place/b7_487.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:4;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/b13_219.jpg" srcset="img/place/m/b13_219.jpg 1280w, img/place/b13_219.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:8;--sp:6;--r:16/9" aria-label="Open the picture"><img src="img/place/b7f4_016.jpg" srcset="img/place/m/b7f4_016.jpg 1280w, img/place/b7f4_016.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:4;--sp:6;--r:auto" aria-label="Open the picture"><img src="img/place/b13f2_23.jpg" srcset="img/place/m/b13f2_23.jpg 1280w, img/place/b13f2_23.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:6;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/b7_140.jpg" srcset="img/place/m/b7_140.jpg 1280w, img/place/b7_140.jpg 2000w" alt="" loading="lazy"></button>
+    <button type="button" style="--s:6;--sp:6;--r:3/2" aria-label="Open the picture"><img src="img/place/b13f2_38.jpg" srcset="img/place/m/b13f2_38.jpg 1280w, img/place/b13f2_38.jpg 2000w" alt="" loading="lazy"></button>
+  </div>
+</section>
+
+<!-- ============ REGION: the last block of the live home page ============ -->
+<section class="pg pastel region" data-ground="light">
+  <p class="t-label">Region</p>
+  <h2 class="t-serif reveal" style="grid-column:1/7">True progress comes from slowing down.</h2>
+  <figure class="vmap reveal" aria-label="Map: VERITAS in Wittenberge, between Berlin and Hamburg"><div class="vmap-c"></div><div class="vmap-ctl"><button type="button" class="round" data-map="in" aria-label="Zoom in"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 15V85M15 50H85"/></svg></button><button type="button" class="round" data-map="out" aria-label="Zoom out"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M15 50H85"/></svg></button><button type="button" class="round" data-map="site" aria-label="VERITAS"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="22"/><path d="M50 8V28M50 72V92M8 50H28M72 50H92"/></svg></button><button type="button" class="round" data-map="region" aria-label="Berlin and Hamburg"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M12 38V12H38M62 12H88V38M88 62V88H62M38 88H12V62"/></svg></button></div><button type="button" class="round vmap-x" data-map="leave" aria-label="Close"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M12.5 12.5L87.5 87.5"/><path d="M87.5 12.5L12.5 87.5"/></svg></button></figure>
+  <div class="reveal vmap-txt" style="grid-column:1/6;--d:90ms">
+    <p class="t-body">The spirit of VERITAS was born in its hometown, Wittenberge, a place shaped by a rich history of innovation and transformation, deeply rooted in nature. Situated right in the middle of Berlin and Hamburg, it’s the perfect location to rethink urban life and work while reconnecting with nature’s rhythm.</p>
+    <div class="sbtns"><a class="sbtn" href="contact.html"><span>Contact us</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a><a class="sbtn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Bad+Wilsnacker+Str.+48,+19322+Wittenberge" target="_blank" rel="noopener"><span>Directions</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></div>
+  </div>
+</section>
+
+</main>
+
+<!-- the footer: the last page of the book (p53) -->
+<footer class="footer dark end" data-ground="dark">
+  <div class="g">
+    <div class="c logo" style="--s:5;--sp:6"><i class="mk"></i></div>
+    <div class="c col" style="--s:2;--sp:3;--at:7"><b>VERITAS Park</b><p>Bad Wilsnacker Str. 48<br>19322 Wittenberge</p><p><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a></p></div>
+    <div class="c col" style="--s:2;--sp:3"><b>BKLV Management GmbH</b><p>Chausseestraße 36<br>10115 Berlin</p></div>
+    <div class="c col" style="--s:2;--sp:6"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><p><a href="imprint.html">Imprint</a><a href="privacy.html">Privacy Policy</a></p></div>
+  </div>
+</footer>
+
+<script src="veritas.js?v=65"></script>
+<script src="symbol.js?v=43"></script>
+<script src="de.js?v=31"></script>
+<script src="i18n.js?v=49" defer></script>
+<script src="hero.js?v=38h" defer></script>
+<script src="wheel.js?v=37" defer></script>
+<script src="map.js?v=1" defer></script>
+</body>
+</html>

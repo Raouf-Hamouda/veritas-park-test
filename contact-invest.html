@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" class="at-top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="light only">
+<title>Invest in Impact, VERITAS</title>
+<link rel="icon" href="img/favicon.svg">
+<link rel="stylesheet" href="veritas.css?v=84">
+<script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
+</head>
+<!-- VERITAS, the investor form of the live site. Written by hand, 22 Nov 2026 (round 6). Words: veritas-park.eu/contact-form-01, question for question. -->
+<body class="v" data-hue="purple">
+
+<div class="gate" aria-hidden="true"><svg data-symbol viewBox="-40 -40 80 80"></svg></div>
+
+<header class="head">
+  <a class="logo" href="index.html" aria-label="VERITAS, home"><i class="mk"></i>
+    <svg class="clock" viewBox="0 0 296 296.01" aria-hidden="true"><line class="hand" x1="148" y1="148.005" x2="148" y2="104.08" stroke="currentColor" stroke-width="5.04"/><line class="hand" x1="148" y1="148.005" x2="148" y2="71.61" stroke="currentColor" stroke-width="5.04"/></svg></a>
+  <nav class="bar" aria-label="Pages"><a href="index.html">Home</a><a href="rent.html">Rent</a><a href="invest.html">Invest</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<nav class="nav dark" id="nav" aria-label="Menu" inert>
+  <ul>
+    <li><a class="sign one" href="index.html" style="--i:0;--d:0ms"><i class="ic" style="--u:url(img/icons/tower.svg)"></i><span>Home</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="rent.html" style="--i:1;--d:70ms"><i class="ic" style="--u:url(img/icons/space_to_rent.svg)"></i><span>Rent</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="invest.html" style="--i:2;--d:140ms"><i class="ic" style="--u:url(img/icons/economy.svg)"></i><span>Invest</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="about.html" style="--i:3;--d:210ms"><i class="ic" style="--u:url(img/icons/stairs.svg)"></i><span>About</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="contact.html" aria-current="page" style="--i:4;--d:280ms"><i class="ic" style="--u:url(img/icons/mail.svg)"></i><span>Contact</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+  </ul>
+  <div class="foot"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></div>
+</nav>
+
+<main>
+
+<!-- the opening: a full picture of the place, the name of the page, the line of the live page -->
+<section class="top2" data-ground="dark">
+  <img src="img/place/epp_9020.jpg" srcset="img/place/m/epp_9020.jpg 1280w, img/place/epp_9020.jpg 2000w" alt="The factory" fetchpriority="high">
+  <div>
+    <span class="t-brush reveal">Contact</span>
+    <h1 class="t-line reveal" style="--d:90ms">Invest in <a class="pill" href="#form">Impact</a><br>At VERITAS</h1>
+    <p class="t-body reveal" style="--d:160ms">The following questions shall help us create an investment offer tailored to your interests</p>
+  </div>
+</section>
+
+<section class="pg white" data-ground="light" id="form" style="border-top:0">
+  <p class="t-label">Invest contact form</p>
+  <aside class="aside side" style="grid-column:1/5">
+    <svg class="dial-p" data-progress viewBox="-40 -40 80 80" aria-hidden="true"></svg>
+    <p class="t-body">If there are any questions, please reach out to</p>
+    <p class="t-serif m" style="margin-top:.3em"><a href="mailto:r.vercouter@eurinvest.net" style="text-decoration:none">r.vercouter@eurinvest.net</a></p>
+    <div class="sbtns"><a class="sbtn" href="contact.html"><span>Find your space</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></div>
+  </aside>
+  <form class="form" action="mailto:r.vercouter@eurinvest.net" method="post" enctype="text/plain" style="grid-column:6/13">
+    <!-- the form opens the visitor's mail with the answers. To wire to the client's form service when the site goes live. -->
+    <div class="two">
+      <label class="q"><span>Please tell us a bit about yourself *</span><input type="text" name="First name" required></label>
+      <label class="q"><span>Last name *</span><input type="text" name="Last name" required></label>
+      <label class="q"><span>Email *</span><input type="email" name="Email" required></label>
+      <label class="q"><span>Company *</span><input type="text" name="Company" required></label>
+    </div>
+    <fieldset class="q"><legend>How would you describe your investment goals? *</legend><div class="opts">
+      <label><input type="radio" name="Investment goals" value="I am an international investor looking to establish a foothold in Europe" required><span>I am an international investor looking to establish a foothold in Europe</span></label>
+      <label><input type="radio" name="Investment goals" value="I am a German investor interested in investment opportunities"><span>I am a German investor interested in investment opportunities</span></label>
+      <label><input type="radio" name="Investment goals" value="Others (please specify)"><span>Others (please specify)</span></label></div></fieldset>
+    <label class="q" data-if="Investment goals=Others (please specify)"><span>Please specify</span><input type="text" name="Goals, specified"></label>
+    <fieldset class="q"><legend>How important is the impact of your investment on the community and environment? *</legend><div class="opts">
+      <label><input type="radio" name="Impact" value="Extremely important" required><span>Extremely important</span></label>
+      <label><input type="radio" name="Impact" value="Somewhat important"><span>Somewhat important</span></label>
+      <label><input type="radio" name="Impact" value="Not a priority"><span>Not a priority</span></label></div></fieldset>
+    <fieldset class="q"><legend>Are you interested in the unique benefits offered by investing in a historic site? *</legend><p class="t-small" style="margin-bottom:.9em;max-width:44em">Investing in this project allows you to benefit from German government incentives for the renovation of historic buildings, which includes up to 100% tax deductions over a 10-year period. This support significantly lowers financial risk while preserving a valuable site.</p><div class="opts">
+      <label><input type="radio" name="Historic site benefits" value="Yes, I am interested in learning more about these incentives" required><span>Yes, I am interested in learning more about these incentives</span></label>
+      <label><input type="radio" name="Historic site benefits" value="Possibly, I would like more information"><span>Possibly, I would like more information</span></label>
+      <label><input type="radio" name="Historic site benefits" value="Not interested"><span>Not interested</span></label></div></fieldset>
+    <fieldset class="q"><legend>Are you interested in not only investing in VERITAS but also becoming our tenant? *</legend><div class="opts">
+      <label><input type="radio" name="Also tenant" value="Yes, I am" required><span>Yes, I am</span></label>
+      <label><input type="radio" name="Also tenant" value="No"><span>No</span></label>
+      <label><input type="radio" name="Also tenant" value="Not sure yet"><span>Not sure yet</span></label></div></fieldset>
+    <fieldset class="q"><legend>How important is the concept of urban innovation and sustainable culture for you personally? *</legend><div class="opts">
+      <label><input type="radio" name="Urban innovation" value="Very important" required><span>Very important</span></label>
+      <label><input type="radio" name="Urban innovation" value="I like the idea but its not my main focus"><span>I like the idea but its not my main focus</span></label>
+      <label><input type="radio" name="Urban innovation" value="Not a primary focus"><span>Not a primary focus</span></label></div></fieldset>
+    <fieldset class="q"><legend>Do you know of enterprises that might be a good fit? We follow the principle of working with recommendations as we really want to create a committed and skilled community of renters and users *</legend><div class="opts">
+      <label><input type="radio" name="Recommendations" value="Yes" required><span>Yes</span></label>
+      <label><input type="radio" name="Recommendations" value="No"><span>No</span></label></div></fieldset>
+    <label class="q" data-if="Recommendations=Yes"><span>Please share the details (Full name and contact information)</span><textarea name="Recommendation details"></textarea></label>
+    <fieldset class="q"><legend>What range of equity are you considering for this investment? *</legend><div class="opts">
+      <label><input type="radio" name="Equity" value="Up to 500,000 €" required><span>Up to 500,000 €</span></label>
+      <label><input type="radio" name="Equity" value="500,000 - 5 million €"><span>500,000 - 5 million €</span></label>
+      <label><input type="radio" name="Equity" value="5 million - 20 million €"><span>5 million - 20 million €</span></label>
+      <label><input type="radio" name="Equity" value="20 million + €"><span>20 million + €</span></label></div></fieldset>
+    <fieldset class="q"><legend>Do you want to get our investor deck to dive deeper in a one-of-a kind investment opportunity? *</legend><div class="opts">
+      <label><input type="radio" name="Investor deck" value="Yes" required><span>Yes</span></label>
+      <label><input type="radio" name="Investor deck" value="No"><span>No</span></label></div></fieldset>
+    <fieldset class="q"><legend>Would you be interested in visiting the location in person? *</legend><div class="opts">
+      <label><input type="radio" name="Visit" value="Yes, I would like to schedule a visit" required><span>Yes, I would like to schedule a visit</span></label>
+      <label><input type="radio" name="Visit" value="Not at this stage"><span>Not at this stage</span></label></div></fieldset>
+    <label class="q"><span>Is there anything else you would like to share about your investment vision or specific interests?</span><textarea name="Anything else"></textarea></label>
+    <div><button class="sbtn" type="submit"><span>Submit</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></button></div>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer dark end" data-ground="dark">
+  <div class="g">
+    <div class="c logo" style="--s:5;--sp:6"><i class="mk"></i></div>
+    <div class="c col" style="--s:2;--sp:3;--at:7"><b>VERITAS Park</b><p>Bad Wilsnacker Str. 48<br>19322 Wittenberge</p><p><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a></p></div>
+    <div class="c col" style="--s:2;--sp:3"><b>BKLV Management GmbH</b><p>Chausseestraße 36<br>10115 Berlin</p></div>
+    <div class="c col" style="--s:2;--sp:6"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><p><a href="imprint.html">Imprint</a><a href="privacy.html">Privacy Policy</a></p></div>
+  </div>
+</footer>
+
+<script src="veritas.js?v=65"></script>
+<script src="symbol.js?v=43"></script>
+<script src="de.js?v=31"></script>
+<script src="i18n.js?v=49" defer></script>
+</body>
+</html>

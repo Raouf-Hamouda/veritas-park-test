@@ -1,0 +1,89 @@
+/* VERITAS, English and German on the same page. The switch is instant: no page is loaded again and the page does not move.
+   The German is the German of the live site (de.js: each English text of veritas-park.eu paired with its text on veritas-park.eu/de).
+   The few words that exist only on this site (names on the opening pictures, buttons) are translated here, in MINE: these are my own German
+   and should be read by the client. The names on the 3D model stay in English, as they are on the map of the live site. */
+(() => {
+  const DE = window.VERITAS_DE || {}, key = t => t.toLowerCase().replace(/[^a-z0-9äöüß]+/g, '');
+  const MINE = {
+    'See the spaces': 'Räume ansehen', 'Get in touch': 'Kontakt aufnehmen', 'Meet VERITAS': 'VERITAS kennenlernen', 'About us': 'Über uns', 'Menu': 'Menü', 'Close': 'Schließen', 'Directions': 'Route', 'This page does not exist': 'Diese Seite gibt es nicht', 'Back to home': 'Zurück zur Startseite', 'Page not found': 'Seite nicht gefunden', 'Imprint': 'Impressum', 'Privacy Policy': 'Datenschutzerklärung',
+    'Be the first to know': 'Als Erstes informiert sein', 'Subscribe to receive our newsletter on the place, its spaces, events and more': 'Abonnieren Sie unseren Newsletter über den Ort, seine Räume, Veranstaltungen und mehr', 'I am interested in': 'Ich interessiere mich für', 'News from VERITAS': 'Neuigkeiten von VERITAS', 'Spaces to rent': 'Räume zur Miete', 'Invest': 'Investieren', 'Sign up': 'Anmelden', 'Privacy Policy': 'Datenschutzerklärung',
+    'You can withdraw your consent at any time with the unsubscribe link in each newsletter': 'Sie können Ihre Einwilligung jederzeit über den Abmeldelink in jedem Newsletter widerrufen',
+    'At VERITAS, we host, house, and hone creative thinkers': 'Bei VERITAS empfangen, beherbergen und fördern wir kreative Köpfe',
+    'Space for big ideas': 'Raum für große Ideen', 'Hotel': 'Hotel', 'Lobby Bar': 'Lobby-Bar', 'Offices and Co-working': 'Büros und Coworking', 'Office Hotel': 'Bürohotel', 'Work Spaces': 'Arbeitsräume',
+    'Conference Hall': 'Konferenzsaal', 'Events and Club': 'Events und Club', 'Sport': 'Sport', 'Light Industry': 'Leichtindustrie', 'By the River': 'Am Fluss', 'The Clock Tower': 'Der Uhrenturm', 'The Factory': 'Die Fabrik',
+    'Building 13': 'Gebäude 13', 'Building 7': 'Gebäude 7', 'Building 2': 'Gebäude 2', 'Building 110': 'Gebäude 110', 'Building 13, ground floor': 'Gebäude 13, Erdgeschoss', 'Building 13, first floor': 'Gebäude 13, erstes Obergeschoss',
+    'Building 13, second floor': 'Gebäude 13, zweites Obergeschoss', 'Building 14, for conferences and performances': 'Gebäude 14, für Konferenzen und Aufführungen', 'Building 4, with a restaurant on the water': 'Gebäude 4, mit einem Restaurant am Wasser',
+    '16 hectares of green': '16 Hektar Grün', 'Returns': 'Rendite', 'Commercial': 'Gewerbe', 'Office': 'Büro', 'Shaping the future together.': 'Gemeinsam die Zukunft gestalten.', 'Forever': 'Immer', 'evolving': 'im Wandel' };
+  for (const k in MINE) if (!DE[key(k)]) DE[key(k)] = MINE[k];
+  // the words of the menu and a few short names are set here, so that one word always gives the same German
+  const FIXED = { 'Home': 'Startseite', 'Rent': 'Mieten', 'Invest': 'Investieren', 'About': 'Über uns', 'Contact': 'Kontakt', 'Tax Depreciation': 'Steuerliche Abschreibung', 'Return on Capital': 'Kapitalrendite', 'Total Yield': 'Gesamtrendite', 'Impact': 'Wirkung', 'Story': 'Geschichte', 'Region': 'Region', 'Intro': 'Überblick', 'Spaces': 'Räume', 'Floor plans': 'Grundrisse',
+    'Industrial Architecture: Start of Construction for New Urban District in Wittenberge Draws Closer': 'Industriearchitektur: Baubeginn für neues Stadtquartier in Wittenberge rückt näher',
+    'In Wittenberge, an old industrial site is set to be brought back to life over the coming years. Another hurdle has now been cleared.': 'In Wittenberge soll ein altes Industrieareal in den kommenden Jahren wieder zum Leben erweckt werden. Nun ist eine weitere Hürde genommen.',
+    'Watch the video': 'Video ansehen',
+    // the investor form: my German, to be read by the client
+    'Please tell us a bit about yourself': 'Bitte erzählen Sie uns ein wenig über sich', 'How would you describe your investment goals?': 'Wie würden Sie Ihre Anlageziele beschreiben?',
+    'I am an international investor looking to establish a foothold in Europe': 'Ich bin ein internationaler Investor und möchte in Europa Fuß fassen', 'I am a German investor interested in investment opportunities': 'Ich bin ein deutscher Investor und interessiere mich für Anlagemöglichkeiten',
+    'How important is the impact of your investment on the community and environment?': 'Wie wichtig ist Ihnen die Wirkung Ihrer Investition auf Gemeinschaft und Umwelt?', 'Extremely important': 'Äußerst wichtig', 'Somewhat important': 'Eher wichtig', 'Not a priority': 'Keine Priorität',
+    'Are you interested in the unique benefits offered by investing in a historic site?': 'Interessieren Sie sich für die besonderen Vorteile einer Investition in ein historisches Areal?',
+    'Investing in this project allows you to benefit from German government incentives for the renovation of historic buildings, which includes up to 100% tax deductions over a 10-year period. This support significantly lowers financial risk while preserving a valuable site.': 'Mit einer Investition in dieses Projekt profitieren Sie von staatlichen Anreizen für die Sanierung historischer Gebäude, darunter Steuerabzüge von bis zu 100% über einen Zeitraum von 10 Jahren. Diese Förderung senkt das finanzielle Risiko deutlich und erhält zugleich ein wertvolles Areal.',
+    'Yes, I am interested in learning more about these incentives': 'Ja, ich möchte mehr über diese Anreize erfahren', 'Possibly, I would like more information': 'Vielleicht, ich hätte gern mehr Informationen', 'Not interested': 'Kein Interesse',
+    'Are you interested in not only investing in VERITAS but also becoming our tenant?': 'Möchten Sie nicht nur in VERITAS investieren, sondern auch unser Mieter werden?', 'Yes, I am': 'Ja', 'Not sure yet': 'Noch nicht sicher',
+    'How important is the concept of urban innovation and sustainable culture for you personally?': 'Wie wichtig sind Ihnen persönlich urbane Innovation und nachhaltige Kultur?', 'Very important': 'Sehr wichtig', 'I like the idea but its not my main focus': 'Die Idee gefällt mir, sie steht aber nicht im Mittelpunkt', 'Not a primary focus': 'Kein Schwerpunkt',
+    'Do you know of enterprises that might be a good fit? We follow the principle of working with recommendations as we really want to create a committed and skilled community of renters and users': 'Kennen Sie Unternehmen, die gut zu uns passen würden? Wir arbeiten mit Empfehlungen, weil wir eine engagierte und kompetente Gemeinschaft von Mietern und Nutzern aufbauen möchten',
+    'Please share the details (Full name and contact information)': 'Bitte nennen Sie uns die Angaben (vollständiger Name und Kontaktdaten)', 'What range of equity are you considering for this investment?': 'Welchen Eigenkapitalrahmen ziehen Sie für diese Investition in Betracht?',
+    'Up to 500,000 €': 'Bis 500.000 €', '500,000 - 5 million €': '500.000 - 5 Millionen €', '5 million - 20 million €': '5 Millionen - 20 Millionen €', '20 million + €': 'Über 20 Millionen €',
+    'Do you want to get our investor deck to dive deeper in a one-of-a kind investment opportunity?': 'Möchten Sie unsere Investorenpräsentation erhalten, um diese einzigartige Anlagemöglichkeit genauer kennenzulernen?',
+    'Would you be interested in visiting the location in person?': 'Möchten Sie das Areal persönlich besuchen?', 'Yes, I would like to schedule a visit': 'Ja, ich möchte einen Besuch vereinbaren', 'Not at this stage': 'Derzeit nicht',
+    'Is there anything else you would like to share about your investment vision or specific interests?': 'Möchten Sie uns noch etwas zu Ihrer Anlagevision oder zu besonderen Interessen mitteilen?', 'Serviced Apartments / Hotels': 'Serviced Apartments / Hotels', 'Last name': 'Nachname', 'Company': 'Unternehmen', 'Email': 'E-Mail', 'Main office': 'Hauptsitz', 'Branch location': 'Zweigstelle', 'Office': 'Büro', 'Studio': 'Studio', 'Event': 'Veranstaltung', 'Others (please specify)': 'Sonstiges (bitte angeben)', 'Please specify': 'Bitte angeben',
+    'Small (under 100 sqm)': 'Klein (unter 100 m²)', 'Medium (100 - 400 sqm)': 'Mittel (100 - 400 m²)', 'Large (400+ sqm)': 'Groß (über 400 m²)', 'Private office': 'Eigenes Büro', 'Shared/ co- working space': 'Gemeinschaftsbüro / Coworking', 'Flexible': 'Flexibel',
+    'Yes': 'Ja', 'No': 'Nein', 'Possibly, depending on availability': 'Eventuell, je nach Verfügbarkeit', "Comfortable with an hour's commute": 'Eine Stunde Anfahrt ist in Ordnung', 'Prefer closer proximity': 'Lieber näher', 'Occasional commuting only': 'Nur gelegentliches Pendeln',
+    'Essential to our daily experience': 'Unverzichtbar für unseren Alltag', 'Valuable, but not essential': 'Wertvoll, aber nicht unverzichtbar', 'Not important': 'Nicht wichtig', 'Very helpful': 'Sehr hilfreich', 'Somewhat helpful': 'Etwas hilfreich', 'Not necessary': 'Nicht nötig',
+    'Essential for growth': 'Entscheidend für unser Wachstum', 'Nice to have': 'Schön, aber kein Muss', 'I accept': 'Ich stimme zu', "I don't accept": 'Ich stimme nicht zu', 'Tenant contact form': 'Anfrage für Mieter', 'Invest contact form': 'Anfrage für Investoren', 'Invest in Impact': 'In Wirkung investieren', 'Find your space': 'Ihren Raum finden', 'Company Location': 'Firmensitz', 'Submit': 'Absenden', 'E-Mail *': 'E-Mail *', 'Find yours': 'Finden Sie Ihren', 'at VERITAS.': 'bei VERITAS.', 'Big Ideas need Space!': 'Große Ideen brauchen Raum!', 'Commercial Spaces: Ready for Your Business': 'Gewerbeflächen: bereit für Ihr Unternehmen', 'Office Spaces: Tailored to Your Needs': 'Büroflächen: auf Ihre Bedürfnisse zugeschnitten',
+    'Rooftop Bar': 'Rooftop-Bar', 'Fifth Floor: Hotel Restaurant with Panoramic View': '5. Obergeschoss: Hotelrestaurant mit Panoramablick', 'Fourth Floor: Hotel': '4. Obergeschoss: Hotel', 'Third Floor: Hotel': '3. Obergeschoss: Hotel',
+    'Second Floor: Office Hotel': '2. Obergeschoss: Bürohotel', 'First Floor: Office and Co-working Space': '1. Obergeschoss: Büros und Coworking', 'Ground Floor: Conference Centre': 'Erdgeschoss: Konferenzzentrum', 'Ground Floor: Lobby Bar': 'Erdgeschoss: Lobby-Bar', 'Basement': 'Untergeschoss' };
+  for (const k in FIXED) DE[key(k)] = FIXED[k];
+  const de = t => DE[key(t)];
+  // sentences that carry a highlighted word: the German sentence, with its own highlighted word
+  const PILL = {   // no full stop after a highlighted word, in either language
+    aplacewhereideastakeaction: () => 'Ein Ort, an dem Ideen<br><a class="pill" href="#spaces">zu Taten werden</a>',
+    whenyoucometoveritasyouchallengeyourwayoflife: () => 'Wenn Sie zu VERITAS kommen, stellen Sie Ihre Lebensweise <a class="pill" href="about.html">auf den Prüfstand</a>',
+    bigideasneedspacefindyoursatveritas: () => 'Große Ideen brauchen Raum!<br><a class="pill" href="#spaces">Finden Sie Ihren</a> bei VERITAS.',
+    '90000sqmon16hectaresoflandbytheriverbetweenhamburgandberlin': () => '90.000 Quadratmeter auf einem 16 Hektar großen Grundstück am Flussufer, zwischen <a class="pill" href="#returns">Hamburg und Berlin</a>',
+    bigideasneedspacefindyoursinveritas: () => 'Große Ideen brauchen Raum!<br><a class="pill" href="#form">Finden Sie Ihren</a> bei VERITAS',
+    investinimpactatveritas: () => 'Investieren Sie in <a class="pill" href="#form">Wirkung</a><br>Bei VERITAS',
+    veritasisanurbanotop: () => 'VERITAS ist ein <span class="pill">Urbanotop</span>',
+    everystepforwardstartswithavisionwhatsyours: () => `${de('Every step forward starts with a vision.') || 'Jeder Schritt nach vorn beginnt mit einer Vision.'} <span class="pill">${de('What’s yours?') || de("What's yours?") || 'Was ist Ihre?'}</span>` };
+  // a text the live site holds in several pieces (a link in the middle of a sentence, a first letter set apart) is put together from its pieces
+  const compose = t => { const w = t.split(' '), out = []; let i = 0; while (i < w.length) { let j = w.length, hit; for (; j > i; j--) { hit = DE[key(w.slice(i, j).join(' '))]; if (hit && j - i > 2) break; hit = undefined } if (!hit) return; out.push(hit); i = j } return out.length > 1 ? out.join(' ').replace(/ ([.,])/g, '$1') : undefined };
+  // the sentence under "VERITAS is an Urbanotop" is the second half of one sentence of the live site
+  const urb = Object.keys(DE).find(k => k.startsWith('veritasisanurbanotop') && k.length > 40); if (urb) { const rest = DE[urb].split(/\s[–-]\s/)[1]; if (rest) DE[key('An urban center with self-sustaining, future-forward and economic potential paired with green environmental standards which balances the need for a harmony between work, life, leisure and innovation.')] = rest[0].toUpperCase() + rest.slice(1) }
+
+  const skip = el => !el || el.closest('script,style,svg,.lang,.legal-txt,.urb-ui,.fl-ui,.fl-sheet,.place,.who,.lb');
+  function set(lang) {
+    document.documentElement.lang = lang; const G = lang === 'de';
+    for (const el of document.querySelectorAll('h1,h2,h3,p,blockquote')) { if (!el.querySelector(':scope > .pill')) continue; if (el._en === undefined) { el._en = el.innerHTML; el._k = key(el.textContent) } const make = PILL[el._k]; el._done = !!make; if (make) el.innerHTML = G ? make() : el._en }
+    for (const b of document.querySelectorAll('.t-body')) { const ps = [...b.querySelectorAll(':scope > p')]; if (ps.length < 2) continue; if (b._k === undefined) { b._k = key(b.textContent); ps[0]._en = ps[0].textContent } const g = DE[b._k]; b._whole = !!g; if (g) { ps[0].textContent = G ? g : ps[0]._en; ps.slice(1).forEach(p => p.hidden = G) } }
+    const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT); let n;
+    while ((n = walk.nextNode())) { const el = n.parentElement; if (skip(el) || !n.nodeValue.trim()) continue; const body = el.closest('.t-body'); if ((body && body._whole) || (el.closest('h1,h2,h3,p,blockquote') || {})._done) continue;
+      if (n._en === undefined) n._en = n.nodeValue; const star = / \*$/.test(n._en.trim()), t = n._en.trim().replace(/ \*$/, ''), halves = t.split(': ');   // the star of a required answer is kept apart
+      // a text the live site cuts in two ("Commercial Spaces:" then "Ready for Your Business", or a first letter set apart) is put together again
+      let g = DE[key(t)] || (halves.length === 2 && DE[key(halves[0])] && DE[key(halves[1])] ? DE[key(halves[0])].replace(/:$/, '') + ': ' + DE[key(halves[1])] : undefined);
+      if (!g && t.length > 60) { g = compose(t); if (!g) { const c = compose(t.slice(1)); if (c) g = t[0] + c } } let out = G && g ? n._en.replace(n._en.trim(), g.replace(/^»\s*/, '').replace(/\s*\*$/, '') + (star ? ' *' : '')) : n._en;
+      if (G && g && el.closest('.quote')) out = out.replace('„', '“').replace(/“(\s*)$/, '”$1');   // the same quotation marks in both languages
+      n.nodeValue = out }
+    for (const el of document.querySelectorAll('[data-name]')) for (const a of ['name', 'line']) { if (el.dataset[a] === undefined) continue; if (el.dataset[a + 'En'] === undefined) el.dataset[a + 'En'] = el.dataset[a]; const g = DE[key(el.dataset[a + 'En'])]; el.dataset[a] = G && g ? g : el.dataset[a + 'En'] }
+    document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
+    try { localStorage.setItem('v-lang', lang) } catch (e) {}
+    dispatchEvent(new Event('veritas-lang')); dispatchEvent(new Event('resize'));
+  }
+  // the change: the words step back, change, and come back. The block you are reading stays where it is on the screen.
+  const swap = lang => { const root = document.documentElement; if (root.lang === lang || root.classList.contains('lang-swap')) return;
+    const mark = [...document.querySelectorAll('main > section, footer')].find(x => x.getBoundingClientRect().bottom > 100), top = mark ? mark.getBoundingClientRect().top : 0;
+    root.classList.add('lang-swap');
+    setTimeout(() => { set(lang); requestAnimationFrame(() => { if (mark) scrollTo({ top: scrollY + mark.getBoundingClientRect().top - top, behavior: 'instant' });
+      root.classList.remove('lang-swap'); root.classList.add('lang-in'); setTimeout(() => root.classList.remove('lang-in'), 700) }) }, 250) };
+  document.addEventListener('click', e => { const b = e.target.closest('[data-lang]'); if (b) { e.preventDefault(); swap(b.dataset.lang) } });
+  // the first visit opens in the language of the visitor's browser (German for a browser set to German); after that, the choice made with the switch is kept
+  let saved = null; try { saved = localStorage.getItem('v-lang') } catch (e) {} if (!saved) saved = /^de\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || '') ? 'de' : 'en'; if (saved === 'de') set('de');
+  window.veritasLang = set;
+})();

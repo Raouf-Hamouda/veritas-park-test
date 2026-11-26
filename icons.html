@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="at-top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="light only">
+<title>Icons, VERITAS</title>
+<link rel="icon" href="img/favicon.svg">
+<link rel="stylesheet" href="veritas.css?v=84">
+<script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
+</head>
+<!-- VERITAS, the icons page: how an icon is made, and the whole set. Written by hand, 23 Nov 2026. Recipe: the brand book, p35. -->
+<body class="v" data-hue="red">
+
+<div class="gate" aria-hidden="true"><svg data-symbol viewBox="-40 -40 80 80"></svg></div>
+
+<header class="head">
+  <a class="logo" href="index.html" aria-label="VERITAS, home"><i class="mk"></i>
+    <svg class="clock" viewBox="0 0 296 296.01" aria-hidden="true"><line class="hand" x1="148" y1="148.005" x2="148" y2="104.08" stroke="currentColor" stroke-width="5.04"/><line class="hand" x1="148" y1="148.005" x2="148" y2="71.61" stroke="currentColor" stroke-width="5.04"/></svg></a>
+  <nav class="bar" aria-label="Pages"><a href="index.html">Home</a><a href="rent.html">Rent</a><a href="invest.html">Invest</a><a href="about.html">About</a><a href="contact.html">Contact</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<nav class="nav dark" id="nav" aria-label="Menu" inert>
+  <ul>
+    <li><a class="sign one" href="index.html" style="--i:0;--d:0ms"><i class="ic" style="--u:url(img/icons/tower.svg)"></i><span>Home</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="rent.html" style="--i:1;--d:70ms"><i class="ic" style="--u:url(img/icons/space_to_rent.svg)"></i><span>Rent</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="invest.html" style="--i:2;--d:140ms"><i class="ic" style="--u:url(img/icons/economy.svg)"></i><span>Invest</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="about.html" style="--i:3;--d:210ms"><i class="ic" style="--u:url(img/icons/stairs.svg)"></i><span>About</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="contact.html" style="--i:4;--d:280ms"><i class="ic" style="--u:url(img/icons/mail.svg)"></i><span>Contact</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+  </ul>
+  <div class="foot"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></div>
+</nav>
+
+<main>
+
+<!-- the opening: the light of the book, the name of the page, the sentence of the book about its icons (p35) -->
+<section class="top2 plain" data-ground="dark">
+  <div>
+    <span class="t-brush reveal">Icons</span>
+    <h1 class="t-line reveal" style="--d:90ms">Minimal line icons, following the lines and structure of the <span class="pill">clock face</span></h1>
+  </div>
+</section>
+
+<!-- how an icon is made: the four steps of the book's recipe, drawn -->
+<section class="white" data-ground="light">
+  <div class="pg" style="border-top:0"><p class="t-label">How an icon is made</p></div>
+  <div class="steps">
+    <figure class="reveal">
+      <svg viewBox="-2 -2 104 104" role="img" aria-label="A square of 100 with its grid"><defs><pattern id="grid" width="2.5" height="2.5" patternUnits="userSpaceOnUse"><path d="M2.5 0H0V2.5" fill="none" stroke="#cfc9dd" stroke-width=".16"/></pattern></defs><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/></svg>
+      <figcaption><b>The square</b>An artboard of 100 by 100, cut by a grid of 2.5. Every line of every icon starts and ends on it.</figcaption>
+    </figure>
+    <figure class="reveal" style="--d:90ms">
+      <svg viewBox="-2 -2 104 104" role="img" aria-label="The clock face laid on the square"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><g class="draw" fill="none" stroke="#000" stroke-width=".35"><path d="M0 50a50 50 0 1 0 100 0a50 50 0 1 0 -100 0"/><path d="M17.5 50a32.5 32.5 0 1 0 65 0a32.5 32.5 0 1 0 -65 0"/><path d="M50 0V100"/><path d="M75 6.7L25 93.3"/><path d="M93.3 25L6.7 75"/><path d="M100 50H0"/><path d="M93.3 75L6.7 25"/><path d="M75 93.3L25 6.7"/></g></svg>
+      <figcaption><b>The clock face</b>The circle of the logo and its twelve rays are laid on the square. They give the icons their slopes: 30, 45 and 60 degrees, like the hours.</figcaption>
+    </figure>
+    <figure class="reveal" style="--d:180ms">
+      <svg viewBox="-2 -2 104 104" role="img" aria-label="The line of an icon"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><g fill="none" stroke="#9a94b4" stroke-width=".3"><path d="M0 50a50 50 0 1 0 100 0a50 50 0 1 0 -100 0"/><path d="M50 0V100"/><path d="M100 50H0"/></g><g class="draw" fill="none" stroke="#000" stroke-width="5"><path d="M30 100V2.5H70V100"/><path d="M32.5 50H67.5"/></g></svg>
+      <figcaption><b>The line</b>One line weight, 5, with square ends and square corners. No round ends, no fill. Figures are made of separate ticks, like the logo.</figcaption>
+    </figure>
+    <figure class="reveal" style="--d:270ms">
+      <svg viewBox="-2 -2 104 104" role="img" aria-label="The clock tower icon of the book"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><image href="img/icons/tower.svg" width="100" height="100"/></svg>
+      <figcaption><b>The icon</b>The clock tower of the book, on its grid. The twelve ticks at the top are the logo itself.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- one new icon, built line after line -->
+<section class="white" data-ground="light">
+  <div class="pg"><p class="t-label">One icon, line after line</p><p class="t-serif m reveal" style="grid-column:1/9">A new icon is built on the same square. Here, the roof bar: the rim of the glass, the bowl on the rays of 4 and 8 o’clock, the stem, the foot, the straw.</p></div>
+  <div class="steps five">
+    <figure class="reveal"><svg viewBox="-2 -2 104 104" aria-hidden="true"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><g class="draw" fill="none" stroke="#000" stroke-width="5"><path d="M12.5 12.5H87.5"/></g></svg></figure>
+    <figure class="reveal" style="--d:90ms"><svg viewBox="-2 -2 104 104" aria-hidden="true"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><g fill="none" stroke="#000" stroke-width="5"><path d="M12.5 12.5H87.5"/></g><g class="draw" fill="none" stroke="#000" stroke-width="5"><path d="M17.5 12.5L50 57.5L82.5 12.5"/></g></svg></figure>
+    <figure class="reveal" style="--d:180ms"><svg viewBox="-2 -2 104 104" aria-hidden="true"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><g fill="none" stroke="#000" stroke-width="5"><path d="M12.5 12.5H87.5"/><path d="M17.5 12.5L50 57.5L82.5 12.5"/></g><g class="draw" fill="none" stroke="#000" stroke-width="5"><path d="M50 57.5V92.5"/></g></svg></figure>
+    <figure class="reveal" style="--d:270ms"><svg viewBox="-2 -2 104 104" aria-hidden="true"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><g fill="none" stroke="#000" stroke-width="5"><path d="M12.5 12.5H87.5"/><path d="M17.5 12.5L50 57.5L82.5 12.5"/><path d="M50 57.5V92.5"/></g><g class="draw" fill="none" stroke="#000" stroke-width="5"><path d="M30 95H70"/></g></svg></figure>
+    <figure class="reveal" style="--d:360ms"><svg viewBox="-2 -2 104 104" aria-hidden="true"><rect width="100" height="100" fill="url(#grid)" stroke="#b9b3cf" stroke-width=".3"/><g fill="none" stroke="#000" stroke-width="5"><path d="M12.5 12.5H87.5"/><path d="M17.5 12.5L50 57.5L82.5 12.5"/><path d="M50 57.5V92.5"/><path d="M30 95H70"/></g><g class="draw" fill="none" stroke="#000" stroke-width="5"><path d="M57.5 30L70 8.3"/></g></svg></figure>
+  </div>
+</section>
+
+<!-- the six icons of the book, as they are -->
+<section class="white" data-ground="light">
+  <div class="pg"><p class="t-label">The six icons of the book</p></div>
+  <div class="set6">
+    <figure><i class="ic" style="--u:url(img/icons/restaurant.svg)"></i><figcaption>Restaurant</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/stairs.svg)"></i><figcaption>Stairs</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/tower.svg)"></i><figcaption>Clock tower</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/exit.svg)"></i><figcaption>Exit</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/wc.svg)"></i><figcaption>WC</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/cafe.svg)"></i><figcaption>Café</figcaption></figure>
+  </div>
+</section>
+
+<!-- the icons drawn for the site, on the same recipe: the places, the six fields, the signs of the screen -->
+<section class="white" data-ground="light">
+  <div class="pg"><p class="t-label">Drawn for the site: places</p></div>
+  <div class="set6">
+    <figure><i class="ic" style="--u:url(img/icons/hotel.svg)"></i><figcaption>Hotel</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/spa.svg)"></i><figcaption>Spa</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/coworking.svg)"></i><figcaption>Co-working</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/space_to_rent.svg)"></i><figcaption>Space to rent</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/lab.svg)"></i><figcaption>Lab</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/art_space.svg)"></i><figcaption>Art space</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/gallery.svg)"></i><figcaption>Gallery</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/photography_museum.svg)"></i><figcaption>Photography museum</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/event_hall.svg)"></i><figcaption>Event hall</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/club.svg)"></i><figcaption>Club</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/sport.svg)"></i><figcaption>Sport</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/artist_residency.svg)"></i><figcaption>Artist residency</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/roof_bar.svg)"></i><figcaption>Roof bar</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/tiny_house.svg)"></i><figcaption>Tiny house</figcaption></figure>
+  </div>
+  <div class="pg"><p class="t-label">Drawn for the site: the six fields</p></div>
+  <div class="set6">
+    <figure data-hue="brown"><i class="ic" style="--u:url(img/icons/construction.svg)"></i><figcaption>Construction</figcaption></figure>
+    <figure data-hue="red"><i class="ic" style="--u:url(img/icons/work.svg)"></i><figcaption>Work</figcaption></figure>
+    <figure data-hue="violet"><i class="ic" style="--u:url(img/icons/economy.svg)"></i><figcaption>Economy</figcaption></figure>
+    <figure data-hue="purple"><i class="ic" style="--u:url(img/icons/mobility.svg)"></i><figcaption>Mobility</figcaption></figure>
+    <figure data-hue="blue"><i class="ic" style="--u:url(img/icons/energy.svg)"></i><figcaption>Energy</figcaption></figure>
+    <figure data-hue="turquoise"><i class="ic" style="--u:url(img/icons/water.svg)"></i><figcaption>Water</figcaption></figure>
+  </div>
+  <div class="pg"><p class="t-label">Drawn for the site: for the screen</p></div>
+  <div class="set6">
+    <figure><i class="ic" style="--u:url(img/icons/arrow.svg)"></i><figcaption>Arrow</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/menu.svg)"></i><figcaption>Menu</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/close.svg)"></i><figcaption>Close</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/plus.svg)"></i><figcaption>Plus</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/minus.svg)"></i><figcaption>Minus</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/mail.svg)"></i><figcaption>Mail</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/phone.svg)"></i><figcaption>Phone</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/map_pin.svg)"></i><figcaption>Map pin</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/download.svg)"></i><figcaption>Download</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/play.svg)"></i><figcaption>Play</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/language.svg)"></i><figcaption>Language</figcaption></figure>
+    <figure><i class="ic" style="--u:url(img/icons/outside_link.svg)"></i><figcaption>Outside link</figcaption></figure>
+  </div>
+</section>
+
+<!-- on a sign, as the book shows them (p35): the icon stands on a long line, the word in capitals sits on the same line, the line ends in a quarter curve -->
+<section class="pg dark" data-ground="dark">
+  <p class="t-label" style="color:var(--on-dark-2)">On a sign</p>
+  <div class="reveal" style="grid-column:1/8;display:grid;gap:calc(var(--row)*.2)">
+    <div class="sign one" style="--i:0;--d:0ms"><i class="ic" style="--u:url(img/icons/wc.svg)"></i><span>WC</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></div>
+    <div class="sign one" style="--i:1;--d:90ms"><i class="ic" style="--u:url(img/icons/cafe.svg)"></i><span>Café</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></div>
+    <div class="sign one" style="--i:2;--d:180ms"><i class="ic" style="--u:url(img/icons/restaurant.svg)"></i><span>Restaurant</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></div>
+    <div class="sign one" style="--i:3;--d:270ms"><i class="ic" style="--u:url(img/icons/exit.svg)"></i><span>Exit</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer dark end" data-ground="dark">
+  <div class="g">
+    <div class="c logo" style="--s:5;--sp:6"><i class="mk"></i></div>
+    <div class="c col" style="--s:2;--sp:3;--at:7"><b>VERITAS Park</b><p>Bad Wilsnacker Str. 48<br>19322 Wittenberge</p><p><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a></p></div>
+    <div class="c col" style="--s:2;--sp:3"><b>BKLV Management GmbH</b><p>Chausseestraße 36<br>10115 Berlin</p></div>
+    <div class="c col" style="--s:2;--sp:6"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><p><a href="imprint.html">Imprint</a><a href="privacy.html">Privacy Policy</a></p></div>
+  </div>
+</footer>
+
+<script src="veritas.js?v=65"></script>
+<script src="symbol.js?v=43"></script>
+<script src="de.js?v=31"></script>
+<script src="i18n.js?v=49" defer></script>
+</body>
+</html>
