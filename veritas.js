@@ -23,7 +23,7 @@
 
   // square rows (p36): every block ends on a row of the grid
   const probe = D.createElement('i'); probe.style.cssText = 'position:absolute;visibility:hidden;width:var(--row);height:0'; body.append(probe);
-  let row = 100; const blocks = $$('main>section,footer').filter(s => !s.matches('.top2,.call2,.hero,.wheel-sec,.urb,.kz,.meets,.nlb'));   // the blocks that fill one screen keep the height of the screen
+  let row = 100; const blocks = $$('main>section').filter(s => !s.matches('.top2,.call2,.hero,.wheel-sec,.urb,.kz,.meets,.nlb'));   // the blocks that fill one screen keep the height of the screen
   const snap = () => { row = probe.getBoundingClientRect().width; const all = $$('main>section,footer'), mark = all.find(s => s.getBoundingClientRect().bottom > 80), t0 = mark ? mark.getBoundingClientRect().top : 0;
     for (const s of blocks) { s.style.minHeight = ''; } for (const s of blocks) { const h = s.getBoundingClientRect().height; s.style.minHeight = Math.ceil((h - 1) / (row / 2)) * (row / 2) + 'px' }   /* half rows since 26 Nov 2026: whole rows left empty bands of up to a row at the foot of a block */
     if (mark) { const d = mark.getBoundingClientRect().top - t0; if (Math.abs(d) > 1) scrollBy({ top: d, behavior: 'instant' }) } };   // the block being read never moves when the rows are set again
