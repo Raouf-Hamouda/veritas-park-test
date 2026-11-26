@@ -175,9 +175,3 @@
 (() => { const f = document.querySelector('.footer'); if (!f) return; const h = getComputedStyle(f).getPropertyValue('--h-dark').trim() || '#421616';
   const hex = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(h), rgb = /(\d+)\D+(\d+)\D+(\d+)/.exec(h), c = hex ? hex.slice(1).map(x => parseInt(x, 16)) : rgb ? rgb.slice(1).map(Number) : null;
   if (c) document.documentElement.style.backgroundColor = `rgb(${c.map(v => Math.round(v * .62)).join(',')})` })();
-
-/* the phone menu: a pressed sign draws its hook, then the page changes (the stroke takes a third of a second) */
-document.querySelectorAll('.nav .sign[href]').forEach(a => a.addEventListener('click', e => {
-  if (!matchMedia('(max-width:820px)').matches || e.metaKey || e.ctrlKey || a.classList.contains('go')) return;
-  e.preventDefault(); a.classList.add('go'); setTimeout(() => { location.href = a.href; setTimeout(() => a.classList.remove('go'), 600) }, 340) }));
-addEventListener('pageshow', () => document.querySelectorAll('.nav .sign.go').forEach(a => a.classList.remove('go')));
