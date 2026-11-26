@@ -5,7 +5,7 @@
 (() => {
   const DE = window.VERITAS_DE || {}, key = t => t.toLowerCase().replace(/[^a-z0-9äöüß]+/g, '');
   const MINE = {
-    'See the spaces': 'Räume ansehen', 'Get in touch': 'Kontakt aufnehmen', 'Meet VERITAS': 'VERITAS kennenlernen', 'About us': 'Über uns', 'Menu': 'Menü', 'Close': 'Schließen', 'Directions': 'Route', 'This page does not exist': 'Diese Seite gibt es nicht', 'Back to home': 'Zurück zur Startseite', 'Page not found': 'Seite nicht gefunden', 'Imprint': 'Impressum', 'Privacy Policy': 'Datenschutzerklärung',
+    'See the spaces': 'Räume ansehen', 'All news': 'Alle Nachrichten', 'Get in touch': 'Kontakt aufnehmen', 'Meet VERITAS': 'VERITAS kennenlernen', 'About us': 'Über uns', 'Menu': 'Menü', 'Close': 'Schließen', 'Directions': 'Route', 'This page does not exist': 'Diese Seite gibt es nicht', 'Back to home': 'Zurück zur Startseite', 'Page not found': 'Seite nicht gefunden', 'Imprint': 'Impressum', 'Privacy Policy': 'Datenschutzerklärung',
     'Be the first to know': 'Als Erstes informiert sein', 'Subscribe to receive our newsletter on the place, its spaces, events and more': 'Abonnieren Sie unseren Newsletter über den Ort, seine Räume, Veranstaltungen und mehr', 'I am interested in': 'Ich interessiere mich für', 'News from VERITAS': 'Neuigkeiten von VERITAS', 'Spaces to rent': 'Räume zur Miete', 'Invest': 'Investieren', 'Sign up': 'Anmelden', 'Privacy Policy': 'Datenschutzerklärung',
     'You can withdraw your consent at any time with the unsubscribe link in each newsletter': 'Sie können Ihre Einwilligung jederzeit über den Abmeldelink in jedem Newsletter widerrufen',
     'At VERITAS, we host, house, and hone creative thinkers': 'Bei VERITAS empfangen, beherbergen und fördern wir kreative Köpfe',

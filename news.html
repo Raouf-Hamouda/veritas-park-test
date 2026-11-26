@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="at-top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="light only">
+<title>VERITAS, News</title>
+<link rel="icon" href="img/favicon.svg">
+<link rel="stylesheet" href="veritas.css?v=86">
+<script>try{if(sessionStorage.getItem('v-bar')==='b')document.documentElement.classList.add('scrolled')}catch(e){}</script>
+</head>
+<body class="v" data-hue="red">
+
+<div class="gate" aria-hidden="true"><svg data-symbol viewBox="-40 -40 80 80"></svg></div>
+
+<header class="head">
+  <a class="logo" href="index.html" aria-label="VERITAS, home"><i class="mk"></i>
+    <svg class="clock" viewBox="0 0 296 296.01" aria-hidden="true"><line class="hand" x1="148" y1="148.005" x2="148" y2="104.08" stroke="currentColor" stroke-width="5.04"/><line class="hand" x1="148" y1="148.005" x2="148" y2="71.61" stroke="currentColor" stroke-width="5.04"/></svg></a>
+  <nav class="bar" aria-label="Pages"><a href="index.html">Home</a><a href="rent.html">Rent</a><a href="invest.html">Invest</a><a href="about.html">About</a><a href="news.html" aria-current="page">News</a><a href="contact.html">Contact</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<nav class="nav dark" id="nav" aria-label="Menu" inert>
+  <ul>
+    <li><a class="sign one" href="index.html" style="--i:0;--d:0ms"><i class="ic" style="--u:url(img/icons/tower.svg)"></i><span>Home</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="rent.html" style="--i:1;--d:70ms"><i class="ic" style="--u:url(img/icons/space_to_rent.svg)"></i><span>Rent</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="invest.html" style="--i:2;--d:140ms"><i class="ic" style="--u:url(img/icons/economy.svg)"></i><span>Invest</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="about.html" style="--i:3;--d:210ms"><i class="ic" style="--u:url(img/icons/stairs.svg)"></i><span>About</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="news.html" aria-current="page" style="--i:4;--d:280ms"><i class="ic" style="--u:url(img/icons/news.svg)"></i><span>News</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+    <li><a class="sign one" href="contact.html" style="--i:5;--d:350ms"><i class="ic" style="--u:url(img/icons/mail.svg)"></i><span>Contact</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a></li>
+  </ul>
+  <div class="foot"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a><span class="lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button></span></div>
+</nav>
+
+<main>
+
+<!-- VERITAS, the News page. Written 26 Nov 2026 after the remark of the client ("I think we could have a separate news section").
+     Words and pictures: the thirteen news of the live home page, in its order. Nothing is added to them. -->
+
+<!-- the opening: the clock tower through a window of building 7, and the name of the page -->
+<section class="top2" data-ground="dark">
+  <img src="img/place/b7_213.jpg" srcset="img/place/m/b7_213.jpg 1280w, img/place/b7_213.jpg 2000w" alt="The clock tower seen through a window of building 7" fetchpriority="high">
+  <div>
+    <h1 class="t-caps reveal">News</h1>
+  </div>
+</section>
+
+<!-- ============ THE READER: one news to a screen. The page scrolls, the screen holds still and the news change (news.js).
+     The line of ticks is the thirteen news: a tick opens its news. On a phone the news simply follow each other. ============ -->
+<section class="nr white" data-ground="light" style="--n:13">
+  <div class="nr-in">
+    <div class="nr-top"><p class="t-label">News</p><div class="strip-ctl"><button class="round back" data-move="-1" aria-label="Earlier news"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M2.5 50H95"/><path d="M62.5 17.5L95 50L62.5 82.5"/></svg></button><button class="round" data-move="1" aria-label="More news"><svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><path d="M2.5 50H95"/><path d="M62.5 17.5L95 50L62.5 82.5"/></svg></button></div></div>
+    <div class="nr-rule"><button type="button" class=on aria-label="BBIK Award Article &amp; History"></button><button type="button" aria-label="VERITAS receives €2.8M in Federal Funding"></button><button type="button" aria-label="The Wittenberge Sewing Machine Factory, Historical Landmark of Engineering"></button><button type="button" aria-label="Industrial Architecture: Start of Construction for New Urban District in Wittenberge Draws Closer"></button><button type="button" aria-label="Veritas Park in Wittenberge is getting a new hotel, co-working spaces, and a restaurant."></button><button type="button" aria-label="Veritas Park is part of the State Garden Show Wittenberge 2027"></button><button type="button" aria-label="Veritas Phase 1 chief architect Andra Schumann with Federal Minister of Construction Robert Crumbach (SPD) in Veritas Park in Wittenberge."></button><button type="button" aria-label="Where Capital Meets Coast: Berlin-Brandenburg and Hamburg Join Forces in Wittenberge’s Emerging Innovation Hub"></button><button type="button" aria-label="Regional Leadership Meets Visionary Investment: District Administrator Müller Tours the VERITAS Campus with Investor Renaud Vercouter"></button><button type="button" aria-label="Transformation Underway: Construction Begins on Flagship Hotel and Restaurant at VERITAS Park, Reimagining Wittenberge’s Future"></button><button type="button" aria-label="Ambitious Futures in Motion: Investor Unveils Long-Term VERITAS Park Masterplan to Prignitz District Leadership"></button><button type="button" aria-label="VERITAS initiators welcomed to Accept BBIK Award"></button><button type="button" aria-label="New Book: The Sewing Machine Factory of Wittenberge"></button></div>
+    <div class="nr-list">
+      <article class="on">
+        <figure><img src="img/news_big/news_bbik.jpg" width="768" height="777" alt=""></figure>
+        <div class="nr-txt">
+          <h2>BBIK Award Article &amp; History</h2>
+          <div class="t-body"><p>The Wittenberge sewing machine factory is the first factory to be awarded the title of Historic Landmark of Civil Engineering in Germany, celebrating its rich history and sustainability.</p></div>
+          <a class="sbtn s" href="https://wahrzeichen.ingenieurbaukunst.de/wahrzeichen/das-naehmaschinenwerk-wittenberge/" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_funding.jpg" width="768" height="432" alt=""></figure>
+        <div class="nr-txt">
+          <h2>VERITAS receives €2.8M in Federal Funding</h2>
+          <div class="t-body"><p>Approved in September 2023 by The Budget Committee of the German Bundestag, the funding commitment is an important signal for the further development of the area, which is unique even beyond Wittenberge.</p></div>
+          <a class="sbtn s" href="https://www.wittenberge.de/news/1/869786/nachrichten/28-millionen-euro-f%C3%BCr-entwicklung-des-veritas-parks.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_film.jpg" width="768" height="396" alt=""></figure>
+        <div class="nr-txt">
+          <h2>The Wittenberge Sewing Machine Factory, Historical Landmark of Engineering</h2>
+          <div class="t-body"><p>Produced by Hello Studio W, this mini-doc was created to honor the historical landmark of the Singer Sewing Machine factory. In between aerial views of the factory and archival footage, we hear from local experts Christian Von Hagen and Sven Bardua.</p></div>
+          <a class="sbtn s" href="https://www.youtube.com/watch?v=jnGKABSUUIU" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_tagesspiegel.jpg" width="768" height="329" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Industrial Architecture: Start of Construction for New Urban District in Wittenberge Draws Closer</h2>
+          <div class="t-body"><p>In Wittenberge, an old industrial site is set to be brought back to life over the coming years. Another hurdle has now been cleared.</p></div>
+          <a class="sbtn s" href="https://www.tagesspiegel.de/berlin/industriearchitektur-baubeginn-fur-neues-stadtquartier-in-wittenberge-ruckt-naher-14982056.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_5.jpg" width="768" height="576" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Veritas Park in Wittenberge is getting a new hotel, co-working spaces, and a restaurant.</h2>
+          <a class="sbtn s" href="https://www.maz-online.de/lokales/prignitz/wittenberge/veritas-park-in-wittenberge-neues-hotel-mit-140-zimmern-140-euro-kostet-die-nacht-HXJRAOHUPJH2XP5YIASRK5TVLM.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_6.jpg" width="340" height="438" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Veritas Park is part of the State Garden Show Wittenberge 2027</h2>
+          <a class="sbtn s" href="https://www.laga-wittenberge.de/veritas-park-ist-teil-der-landesgartenschau-wittenberge-2027/" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_7.jpg" width="768" height="576" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Veritas Phase 1 chief architect Andra Schumann with Federal Minister of Construction Robert Crumbach (SPD) in Veritas Park in Wittenberge.</h2>
+          <a class="sbtn s" href="https://www.maz-online.de/lokales/prignitz/wittenberge/veritas-park-in-wittenberge-bauarbeiten-hotel-millionen-investition-und-konzert-im-sommer-HR3UCGUDNNHCLASHCNSYKYI66I.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_8.jpg" width="400" height="300" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Where Capital Meets Coast: Berlin-Brandenburg and Hamburg Join Forces in Wittenberge’s Emerging Innovation Hub</h2>
+          <a class="sbtn s" href="https://www.wittenberge.de/news/1/1034278/nachrichten/hauptstadtregion-berlin-brandenburg-trifft-metropolregion-hamburg-in-wittenberge.html" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_9.jpg" width="768" height="432" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Regional Leadership Meets Visionary Investment: District Administrator Müller Tours the VERITAS Campus with Investor Renaud Vercouter</h2>
+          <a class="sbtn s" href="https://www.nordkurier.de/regional/prignitz/landrat-mueller-besucht-investor-renaud-vercouter-auf-dem-veritas-gelaende-3611778" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_10.jpg" width="768" height="337" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Transformation Underway: Construction Begins on Flagship Hotel and Restaurant at VERITAS Park, Reimagining Wittenberge’s Future</h2>
+          <a class="sbtn s" href="https://www.nordkurier.de/regional/prignitz/zeit-der-ddr-naehmaschinen-ist-hier-lange-vorbei-arbeiten-fuer-hotel-und-restaurant-auf-veritas-gelaende-begonnen-3486106" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_9.jpg" width="768" height="432" alt=""></figure>
+        <div class="nr-txt">
+          <h2>Ambitious Futures in Motion: Investor Unveils Long-Term VERITAS Park Masterplan to Prignitz District Leadership</h2>
+          <a class="sbtn s" href="https://www.landkreis-prignitz.de/de/aktuelles/2010/2025_05_20_veritas.php" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_12.jpg" width="768" height="772" alt=""></figure>
+        <div class="nr-txt">
+          <h2>VERITAS initiators welcomed to Accept BBIK Award</h2>
+          <div class="t-body"><p>The former Singer sewing machine factory in Wittenberge was honored with the Historical Landmark of Civil Engineering in Germany Award in October 2024.</p></div>
+          <a class="sbtn s" href="https://www.bbik.de/index.php?id=11&amp;action=detail&amp;seminar_id=2712&amp;termin_id=3476" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+      <article>
+        <figure><img data-src="img/news_big/news_13.jpg" width="768" height="771" alt=""></figure>
+        <div class="nr-txt">
+          <h2>New Book: The Sewing Machine Factory of Wittenberge</h2>
+          <div class="t-body"><p>Sven Bardua wrote a historical review of the innovative civil engineering methods used in the construction of the Singer Sewing Machine Factory. His research offers new insights into the history of the Singer Company, Wittenberge, and early architecture of the 20th century.</p></div>
+          <a class="sbtn s" href="https://www.bbik.de/index.php?id=11&amp;action=detail&amp;seminar_id=2712&amp;termin_id=3476" target="_blank" rel="noopener"><span>Read more</span><svg class="curve" viewBox="0 0 100 100" aria-hidden="true"><path pathLength="1" d="M100 96.4A96.4 96.4 0 0 1 3.6 0"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer dark end" data-ground="dark">
+  <div class="g">
+    <div class="c logo" style="--s:5;--sp:6"><i class="mk"></i></div>
+    <div class="c col" style="--s:2;--sp:3;--at:7"><b>VERITAS Park</b><p>Bad Wilsnacker Str. 48<br>19322 Wittenberge</p><p><a href="mailto:contact@veritas-park.eu">contact@veritas-park.eu</a></p></div>
+    <div class="c col" style="--s:2;--sp:3"><b>BKLV Management GmbH</b><p>Chausseestraße 36<br>10115 Berlin</p></div>
+    <div class="c col" style="--s:2;--sp:6"><a href="https://www.instagram.com/veritas.park/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/veritaspark/" target="_blank" rel="noopener">LinkedIn</a><p><a href="imprint.html">Imprint</a><a href="privacy.html">Privacy Policy</a></p></div>
+  </div>
+</footer>
+
+<script src="veritas.js?v=65"></script>
+<script src="symbol.js?v=43"></script>
+<script src="de.js?v=31"></script>
+<script src="i18n.js?v=50" defer></script>
+<script src="news.js?v=2" defer></script>
+</body>
+</html>
