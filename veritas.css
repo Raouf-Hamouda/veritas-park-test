@@ -1133,11 +1133,11 @@ html{background:#1a0c0c}
 .footer .lang button{display:inline-block}
 
 /* Fields of Innovation (26 Nov 2026, his word: "this black thing that appears, I hate it"): a square never turns black any more.
-   Only its colour column answers: it grows a little and its colours glide slowly along it. */
+   Only its colour column answers: its colours glide slowly along it. It keeps its width (he: "it doesn't have to change size"). */
 .fld .lit{display:none}
 .fld:hover,.fld:focus-visible,.fld.lit-on{color:inherit}
 .fld .col{background-size:100% 220%;background-position:50% 0;transition:width .6s var(--ease),background-position 1.6s var(--ease)}
-.fld:hover .col,.fld:focus-visible .col,.fld.lit-on .col{width:11px;background-position:50% 100%}
+.fld:hover .col,.fld:focus-visible .col,.fld.lit-on .col{width:7px;background-position:50% 100%}
 @media(hover:none){.fld:hover:not(.lit-on) .col{background-position:50% 0}}
 @media(prefers-reduced-motion:reduce){.fld .col{transition:none}}
 
