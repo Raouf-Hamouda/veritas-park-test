@@ -1146,3 +1146,6 @@ html{background:#1a0c0c}
    Phone: the dark red band under the wheel keeps three quarters of its height; the two lines above the wheel sit 20 px lower, the top of the block stays. */
 @media(min-width:821px){.wheel-sec{height:115vh;height:115svh}.wheel-cap{padding-bottom:calc(var(--row)*.34 + 15svh)}}
 @media(max-width:820px){.wheel-sec{height:calc(100svh + 100px)}.wheel-sec .meet{padding-top:calc(var(--meet-top,84px) + 20px)}}
+
+/* the open (large) menu bar at the top of a page: its words stand 4 px closer to each other (26 Nov 2026) */
+html:not(.scrolled) .bar{gap:calc(clamp(18px,2.6vw,44px) - 4px)}
